@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170925103710) do
+ActiveRecord::Schema.define(version: 20170929145002) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,24 @@ ActiveRecord::Schema.define(version: 20170925103710) do
     t.string   "permissejournum"
     t.string   "permissejourloc"
     t.string   "nsecu"
+    t.date     "datefin"
+    t.string   "nomposte"
+    t.string   "dureeprobation"
+    t.date     "probrationfin"
+    t.string   "remuneration"
+    t.string   "heures"
+    t.string   "jour1"
+    t.string   "jour2"
+    t.string   "jour3"
+    t.string   "jour4"
+    t.string   "horaire1"
+    t.string   "horaire2"
+    t.string   "horaire3"
+    t.string   "horaire4"
+    t.string   "dureecontrat"
+    t.boolean  "video"
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_contrats_on_user_id", using: :btree
   end
 
   create_table "invoices", force: :cascade do |t|
@@ -113,6 +131,7 @@ ActiveRecord::Schema.define(version: 20170925103710) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "contrats", "users"
   add_foreign_key "invoices", "users"
   add_foreign_key "reviews", "invoices"
 end

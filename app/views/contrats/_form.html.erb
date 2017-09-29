@@ -29,7 +29,26 @@
     <%= f.input :adresse, label: "Adresse complète de l'employé" %>
     <%= f.input :startdate, label: "Début du contrat de travail" %>
 
-  </div>
+
+  <h2>Détail du Contrat</h2>
+
+    <%= f.input :nomposte, label: "Intitulé du poste" %><%= f.input :datefin, label: "Date de fin de contrat" %>
+
+    <%= f.input :dureecontrat, label: "Durée du contrat" %>
+    <%= f.input :remuneration, label: "Rémunération" %>
+    <%= f.input :video, as: :boolean, checked_value: true, unchecked_value: false, label: "Presence de camera de surveillance" %>
+    <%= f.input :dureeprobation, label: "Durée probation" %>
+    <%= f.input :probrationfin, label: "Date fin de période de probation" %>
+    <%= f.input :heures, label: "Nombre d'heure" %>
+    <%= f.input :jour1, label: "Date 1 (Ne pas remplir si vide)" %>
+    <%= f.input :horaire1, label: "Horaire jour 1 (Ne pas remplir si vide)" %>
+    <%= f.input :jour2, label: "Date 2 (Ne pas remplir si vide)" %>
+    <%= f.input :horaire2, label: "Horaire jour 1 (Ne pas remplir si vide)" %>
+    <%= f.input :jour3, label: "Date 3 (Ne pas remplir si vide)" %>
+    <%= f.input :horaire3, label: "Horaire jour 1 (Ne pas remplir si vide)" %>
+    <%= f.input :jour4, label: "Date 4 (Ne pas remplir si vide)" %>
+<%= f.input :horaire4, label: "Horaire jour 1 (Ne pas remplir si vide)" %>
+<%= f.input :sville, label: "Ville" %>
 
 <h2>Remplir si travailleur de nationalité hors UE</h2>
     <%= f.input :permissejournum, label: "Numéro de permis de séjour" %>
@@ -37,10 +56,19 @@
     <%= f.input :permissejourexp, label: "Expiration du permis de séjour" %>
     <%= f.input :permissejourloc, label: "Préfecture qui a délivré le permis de séjour" %>
 
-  </div>
+
+</div>
 
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
+  </div>
+
+
 <% end %>
 </div>
+
+
+
+
+

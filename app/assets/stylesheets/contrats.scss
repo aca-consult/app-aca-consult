@@ -5,6 +5,13 @@ h1 {
   font-weight: bold;
 }
 
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding-left: 100px;
+  line-height: 150%;
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -64,6 +71,11 @@ i{
 }
 
 .partie {
-  padding-left: 500px;
+  padding-left: 450px;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.alinea {
+  padding-left: 20px;
 }

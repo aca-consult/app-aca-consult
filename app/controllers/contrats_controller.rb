@@ -4,7 +4,7 @@ class ContratsController < ApplicationController
   # GET /contrats
   # GET /contrats.json
   def index
-    @contrats = Contrat.all
+    @contrats = current_user.contrats
     respond_to do |format|
       format.html
       format.json
@@ -35,6 +35,7 @@ class ContratsController < ApplicationController
   # POST /contrats.json
   def create
     @contrat = Contrat.new(contrat_params)
+    @contrat.user = current_user
 
     respond_to do |format|
       if @contrat.save
@@ -79,6 +80,18 @@ class ContratsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contrat_params
-      params.require(:contrat).permit(:nom, :nsecu, :permissejournum, :permissejourloc, :permissejourexp, :permissejourdate, :nationalite, :empcivilite, :birthplace, :birthdate, :prenom, :adresseursaff, :sexerepresentant, :adresseurssaf, :regionurssaf, :numeroaffiliation, :nomrepresentant, :prenomrepresentant, :posterepresentant, :typesociete,:adresse, :nsiret, :societe, :cnaf, :sville, :scposte, :sadresse, :startdate)
+      params.require(:contrat).permit(:dureeprobation,
+:probrationfin,
+:remuneration,
+:heures, :dureecontrat,
+ :jour1,
+:jour2,
+:video,
+:jour3,
+:jour4,
+:horaire1,
+:horaire2,
+:horaire3,
+:horaire4,:nom, :datefin, :nomposte, :nsecu, :permissejournum, :permissejourloc, :permissejourexp, :permissejourdate, :nationalite, :empcivilite, :birthplace, :birthdate, :prenom, :adresseursaff, :sexerepresentant, :adresseurssaf, :regionurssaf, :numeroaffiliation, :nomrepresentant, :prenomrepresentant, :posterepresentant, :typesociete,:adresse, :nsiret, :societe, :cnaf, :sville, :scposte, :sadresse, :startdate)
     end
 end
