@@ -22,6 +22,8 @@ gem 'jquery-fileupload-rails'
 gem 'coffee-rails'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
 
 
 
