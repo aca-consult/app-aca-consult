@@ -12721,3 +12721,25 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 113ms (Views: 104.1ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-03 18:17:58 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i9ARveku2mURBhqXXgCEDuQcNpXargswOh+DraivcSl7zEaRH2gDAKy3dUKpfUi4fnfN5PNOCIY/wyXKei90RA==", "user"=>{"email"=>"mathieu.abeille@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Connexion"}
+  [1m[36mUser Load (35.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "mathieu.abeille@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (9.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-10-03 16:17:58.568184"], ["last_sign_in_at", "2017-10-03 16:10:33.829905"], ["sign_in_count", 5], ["updated_at", "2017-10-03 16:17:58.572214"], ["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 260ms (ActiveRecord: 46.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-03 18:17:58 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (19.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (31.7ms)
+  Rendered shared/_navbar.html.erb (4.6ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 104ms (Views: 81.5ms | ActiveRecord: 19.7ms)
+
+
