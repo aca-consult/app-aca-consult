@@ -205,10 +205,10 @@ L’employeur embauche <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitaliz
 <p>La durée hebdomadaire de travail de <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> est fixée à <b><%= @contrat.heures %>heures</b> selon la répartition suivante :
 </p>
 <div class="alinea">
-<% if @contrat.jour1.present? %> <li><b><%= @contrat.jour1 %></b>   <%= @contrat.horaire1 %> </li> <% end %>
-<% if @contrat.jour2.present? %> <li><b><%= @contrat.jour2 %></b>   <%= @contrat.horaire2 %> </li> <% end %>
-<% if @contrat.jour3.present? %> <li><b><%= @contrat.jour3 %></b>   <%= @contrat.horaire3 %> </li> <% end %>
-<% if @contrat.jour4.present? %> <li><b><%= @contrat.jour4 %></b>   <%= @contrat.horaire4 %> </li> <% end %>
+<% if @contrat.jour1debut.present? %> <li><b><%= @contrat.jour1debut %></b>    </li> <% end %>
+<% if @contrat.jour2debut.present? %> <li><b><%= @contrat.jour2debut %></b>   </li> <% end %>
+<% if @contrat.jour3debut.present? %> <li><b><%= @contrat.jour3debut %></b>    </li> <% end %>
+<% if @contrat.jour4debut.present? %> <li><b><%= @contrat.jour4debut %></b>   </li> <% end %>
 
 </div>
 

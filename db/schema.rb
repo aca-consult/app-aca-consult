@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170929145002) do
+ActiveRecord::Schema.define(version: 20171003133748) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,16 +66,23 @@ ActiveRecord::Schema.define(version: 20170929145002) do
     t.date     "probrationfin"
     t.string   "remuneration"
     t.string   "heures"
-    t.string   "jour1"
-    t.string   "jour2"
-    t.string   "jour3"
-    t.string   "jour4"
-    t.string   "horaire1"
-    t.string   "horaire2"
-    t.string   "horaire3"
-    t.string   "horaire4"
+    t.datetime "jour1debut"
+    t.datetime "jour2debut"
+    t.datetime "jour3debut"
+    t.datetime "jour4debut"
+    t.datetime "jour5debut"
+    t.datetime "jour6debut"
+    t.datetime "jour7debut"
+    t.datetime "jour1fin"
+    t.datetime "jour2fin"
+    t.datetime "jour3fin"
+    t.datetime "jour4fin"
+    t.datetime "jour5fin"
+    t.datetime "jour6fin"
+    t.datetime "jour7fin"
     t.string   "dureecontrat"
     t.boolean  "video"
+    t.boolean  "periodeessai"
     t.integer  "user_id"
     t.index ["user_id"], name: "index_contrats_on_user_id", using: :btree
   end
@@ -127,6 +134,19 @@ ActiveRecord::Schema.define(version: 20170929145002) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "nomentreprise"
+    t.string   "adresseentreprise"
+    t.string   "numerosiret"
+    t.string   "numerocnaf"
+    t.string   "formejuridique"
+    t.string   "sexerepresentant"
+    t.string   "nomrepresentant"
+    t.string   "prenomrepresentant"
+    t.string   "fonctionrepresentant"
+    t.string   "numerourssaf"
+    t.string   "regionurssaf"
+    t.string   "adresseurssaf"
+    t.string   "ville"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
