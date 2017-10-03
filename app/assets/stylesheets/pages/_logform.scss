@@ -16,3 +16,37 @@
     min-height: calc(100vh - 110px);
   }
 
+@media(min-width: 600px){
+  .logbox1{
+  padding: 20px;
+  width: 400px !important;
+  }
+}
+
+  .logbox1{
+    border-radius: 8px;
+    padding: 20px;
+    width: 90vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    margin: auto;
+
+  }
+.log{
+  background-image: radial-gradient(650.649px at 50% 50%,#1f4456 0,#153342 100%), url('https://mathieuabeille.github.io/aca-consult/images/cockpit-09103586.jpg');;
+      min-height: 100vh;
+}
+
+a{
+  color: $orange;
+  opacity:0.6;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 14px;
+}
+a:hover{
+  color: $orange;
+  opacity: 1;
+  text-decoration: none;
+  font-weight: lighter;
+}
