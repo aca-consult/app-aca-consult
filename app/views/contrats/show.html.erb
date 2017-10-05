@@ -13,7 +13,7 @@
   <%= @contrat.adresse %></i>
 </p>
 
-<p>  Pour un poste de<b> <%= @contrat.nomposte %></b><br/> <b>
+<p>  Pour un poste de <b> <%= @contrat.nomposte %></b><br/> <b>
 
       <% nombreheure = 0 %>
     <% nombreheure = (@contrat.jour1fin - @contrat.jour1debut) if @contrat.jour1 == true %>

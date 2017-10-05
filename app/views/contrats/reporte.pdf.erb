@@ -357,7 +357,7 @@ heures
 
 <br/>
 <u><h4>ARTICLE <% if @contrat.periodeessai == true %>6<% else %>7 <% end %> : DUREE DU TRAVAIL</h4></u>
-<p>La durée hebdomadaire de travail de <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> est fixée à <b><%= nombreheure/3600 %></b> selon la répartition suivante :
+<p>La durée hebdomadaire de travail de <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> est fixée à <b><%= nombreheure/3600 %></b> heures selon la répartition suivante :
 </p>
 <div class="alinea"><ul style="list-style-type:none">
 <% if @contrat.jour1 == true %> <li>- Le<b><%= @contrat.jour1debut.strftime('%d/%m/%Y') %></b>, de  <%= @contrat.jour1debut.strftime('%HH%M') %> à <%= @contrat.jour1fin.strftime('%HH%M') %>. </li> <% end %>
