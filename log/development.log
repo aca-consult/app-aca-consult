@@ -15007,3 +15007,40 @@ Sent data Reporte.pdf (1.4ms)
 Completed 200 OK in 3066ms (Views: 0.7ms | ActiveRecord: 1.1ms)
 
 
+Started PATCH "/contrats/1" for 127.0.0.1 at 2017-10-05 10:27:56 +0200
+Processing by ContratsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8f3HDFwD4MQ2Mc9Lqudh4F/IrEpgQ82dmOGIxGqJnQzgUR8D0nGAku8+PB1IsqZ9hOXwcCaP+sburnLUl9IVjw==", "contrat"=>{"empcivilite"=>"Monsieur", "prenom"=>"Mathieu", "nom"=>"Abeille", "adresse"=>"6 Rue du Commandeur, 75014 Paris, France", "birthdate(1i)"=>"1991", "birthdate(2i)"=>"11", "birthdate(3i)"=>"9", "birthplace"=>"Marseille", "nationalite"=>"France", "nsecu"=>"191111315526108", "remuneration"=>"23", "nomposte"=>"Serveur", "jour1"=>"true", "jour2"=>"true", "jour3"=>"true", "jour4"=>"true", "jour5"=>"true", "jour6"=>"true", "jour7"=>"true", "jour1debut(1i)"=>"2017", "jour1debut(2i)"=>"10", "jour1debut(3i)"=>"3", "jour1debut(4i)"=>"07", "jour1debut(5i)"=>"00", "jour1fin(1i)"=>"2017", "jour1fin(2i)"=>"10", "jour1fin(3i)"=>"3", "jour1fin(4i)"=>"17", "jour1fin(5i)"=>"00", "jour2debut(1i)"=>"2017", "jour2debut(2i)"=>"10", "jour2debut(3i)"=>"4", "jour2debut(4i)"=>"08", "jour2debut(5i)"=>"00", "jour2fin(1i)"=>"2017", "jour2fin(2i)"=>"10", "jour2fin(3i)"=>"4", "jour2fin(4i)"=>"17", "jour2fin(5i)"=>"00", "jour3debut(1i)"=>"2017", "jour3debut(2i)"=>"10", "jour3debut(3i)"=>"3", "jour3debut(4i)"=>"11", "jour3debut(5i)"=>"10", "jour3fin(1i)"=>"2017", "jour3fin(2i)"=>"10", "jour3fin(3i)"=>"3", "jour3fin(4i)"=>"11", "jour3fin(5i)"=>"10", "jour4debut(1i)"=>"2017", "jour4debut(2i)"=>"10", "jour4debut(3i)"=>"3", "jour4debut(4i)"=>"11", "jour4debut(5i)"=>"10", "jour4fin(1i)"=>"2017", "jour4fin(2i)"=>"10", "jour4fin(3i)"=>"3", "jour4fin(4i)"=>"11", "jour4fin(5i)"=>"10", "jour5debut(1i)"=>"2017", "jour5debut(2i)"=>"10", "jour5debut(3i)"=>"3", "jour5debut(4i)"=>"11", "jour5debut(5i)"=>"10", "jour5fin(1i)"=>"2017", "jour5fin(2i)"=>"10", "jour5fin(3i)"=>"3", "jour5fin(4i)"=>"11", "jour5fin(5i)"=>"10", "jour6debut(1i)"=>"2017", "jour6debut(2i)"=>"10", "jour6debut(3i)"=>"3", "jour6debut(4i)"=>"11", "jour6debut(5i)"=>"10", "jour6fin(1i)"=>"2017", "jour6fin(2i)"=>"10", "jour6fin(3i)"=>"3", "jour6fin(4i)"=>"11", "jour6fin(5i)"=>"10", "jour7debut(1i)"=>"2017", "jour7debut(2i)"=>"10", "jour7debut(3i)"=>"3", "jour7debut(4i)"=>"11", "jour7debut(5i)"=>"10", "jour7fin(1i)"=>"2017", "jour7fin(2i)"=>"10", "jour7fin(3i)"=>"3", "jour7fin(4i)"=>"11", "jour7fin(5i)"=>"10", "permissejournum"=>"", "permissejourdate(1i)"=>"2017", "permissejourdate(2i)"=>"10", "permissejourdate(3i)"=>"3", "permissejourexp(1i)"=>"2017", "permissejourexp(2i)"=>"10", "permissejourexp(3i)"=>"3", "permissejourloc"=>"", "video"=>"true", "periodeessai"=>"true"}, "commit"=>"Créer le contrat", "id"=>"1"}
+  [1m[36mUser Load (37.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.8ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (5.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/contrats/1
+Completed 302 Found in 118ms (ActiveRecord: 44.5ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:27:56 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (9.7ms)
+  Rendered shared/_navbar.html.erb (6.2ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 135ms (Views: 121.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 10:27:58 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (31.8ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (2.1ms)
+Completed 200 OK in 3287ms (Views: 1.7ms | ActiveRecord: 0.8ms)
+
+

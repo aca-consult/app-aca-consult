@@ -8,6 +8,91 @@
 </head>
 <body>
 
+<style media="screen" type="text/css">
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding-left: 100px;
+  line-height: 150%;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+b{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+
+}
+h4{
+      margin: 0px;
+      padding-top: 10px;
+      line-height: 30%;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+
+i{
+    line-height: 30%;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+.head {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 10px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.bar {
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 2px;
+  padding-left: 20px;
+  padding-top: 5px;
+
+  p {
+    padding-top: 5px;
+  }
+
+}
+
+.societe{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.representant{
+  padding-left: 20px;
+  padding-top: 5px;
+
+}
+
+.partie {
+  padding-left: 450px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.alinea {
+  padding-left: 20px;
+}
+
+
+</style>
 
 <div class="head">
     <h1>Contrat de travail à durée déterminée d’usage
@@ -305,11 +390,11 @@ heures
 <br/>
 <u><h4>ARTICLE <% if @contrat.periodeessai == true %>8<% else %>9 <% end %> : CONGES PAYES</h4></u>
 
-<p>En l’état de la nature du contrat ne permettant pas à <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> de prendre effectivement ses congés, il lui sera versé mensuellement, une indemnité compensatrice de congés payés tel que précisé dans l’article intitulé « rémunération ».
+<p>En l’état de la nature du contrat ne permettant pas à <b> <%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> de prendre effectivement ses congés, il lui sera versé mensuellement, une indemnité compensatrice de congés payés tel que précisé dans l’article intitulé « rémunération ».
 </p>
 <br/>
 <u><h4>ARTICLE <% if @contrat.periodeessai == true %>9<% else %>10 <% end %> : OBLIGATIONS PROFESSIONNELLES</h4></u>
-<p>En l’état de la nature du contrat ne permettant pas à <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b>  s'engage à observer les dispositions réglementant les conditions de travail applicables à l’ensemble des salariés de <%= @contrat.user.formejuridique %> <%= @contrat.user.nomentreprise %> ainsi que les règles générales concernant la discipline et la sécurité du travail.</p>
+<p>En l’état de la nature du contrat ne permettant pas à <b> <%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b>  s'engage à observer les dispositions réglementant les conditions de travail applicables à l’ensemble des salariés de <%= @contrat.user.formejuridique %> <%= @contrat.user.nomentreprise %> ainsi que les règles générales concernant la discipline et la sécurité du travail.</p>
 
 <p>Le salarié s'engage par ailleurs :
 <li>à se conformer aux directives et instructions émanant de la direction ou de son représentant ;
