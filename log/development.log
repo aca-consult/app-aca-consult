@@ -15044,3 +15044,539 @@ Sent data Reporte.pdf (2.1ms)
 Completed 200 OK in 3287ms (Views: 1.7ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-10-05 10:41:51 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (33.8ms)
+  Rendered shared/_navbar.html.erb (4.3ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 104ms (Views: 99.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/contrats" for 127.0.0.1 at 2017-10-05 10:41:53 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (41.0ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mContrat Load (6.9ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (103.2ms)
+  Rendered shared/_navbar.html.erb (4.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 202ms (Views: 137.9ms | ActiveRecord: 50.5ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-05 10:41:59 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.7ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (94.0ms)
+  Rendered contrats/edit.html.erb within layouts/application (97.2ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 165ms (Views: 152.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/contrats" for 127.0.0.1 at 2017-10-05 10:42:21 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 52.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-05 10:42:28 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (7.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (120.2ms)
+  Rendered contrats/edit.html.erb within layouts/application (124.9ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 248ms (Views: 212.6ms | ActiveRecord: 8.6ms)
+
+
+Started PATCH "/contrats/1" for 127.0.0.1 at 2017-10-05 10:42:41 +0200
+Processing by ContratsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rfNQE36W5kkuYnNWtmeS+kjkcTDSH3d+iQUCkH14GcS8X4gc8OSGH/dtgABUMlVnk8ktCpTTQCX/SviAgCORRw==", "contrat"=>{"empcivilite"=>"Monsieur", "prenom"=>"Mathieu", "nom"=>"Abeille", "adresse"=>"6 Rue du Commandeur, 75014 Paris, France", "birthdate(1i)"=>"1991", "birthdate(2i)"=>"11", "birthdate(3i)"=>"9", "birthplace"=>"Marseille", "nationalite"=>"France", "nsecu"=>"191111315526108", "remuneration"=>"23", "nomposte"=>"Serveur", "jour1"=>"true", "jour2"=>"true", "jour3"=>"true", "jour4"=>"true", "jour5"=>"true", "jour6"=>"true", "jour7"=>"true", "jour1debut(1i)"=>"2017", "jour1debut(2i)"=>"10", "jour1debut(3i)"=>"3", "jour1debut(4i)"=>"07", "jour1debut(5i)"=>"00", "jour1fin(1i)"=>"2017", "jour1fin(2i)"=>"10", "jour1fin(3i)"=>"3", "jour1fin(4i)"=>"17", "jour1fin(5i)"=>"00", "jour2debut(1i)"=>"2017", "jour2debut(2i)"=>"10", "jour2debut(3i)"=>"4", "jour2debut(4i)"=>"08", "jour2debut(5i)"=>"00", "jour2fin(1i)"=>"2017", "jour2fin(2i)"=>"10", "jour2fin(3i)"=>"4", "jour2fin(4i)"=>"17", "jour2fin(5i)"=>"00", "jour3debut(1i)"=>"2017", "jour3debut(2i)"=>"10", "jour3debut(3i)"=>"3", "jour3debut(4i)"=>"11", "jour3debut(5i)"=>"10", "jour3fin(1i)"=>"2017", "jour3fin(2i)"=>"10", "jour3fin(3i)"=>"3", "jour3fin(4i)"=>"11", "jour3fin(5i)"=>"10", "jour4debut(1i)"=>"2017", "jour4debut(2i)"=>"10", "jour4debut(3i)"=>"3", "jour4debut(4i)"=>"11", "jour4debut(5i)"=>"10", "jour4fin(1i)"=>"2017", "jour4fin(2i)"=>"10", "jour4fin(3i)"=>"3", "jour4fin(4i)"=>"11", "jour4fin(5i)"=>"10", "jour5debut(1i)"=>"2017", "jour5debut(2i)"=>"10", "jour5debut(3i)"=>"3", "jour5debut(4i)"=>"11", "jour5debut(5i)"=>"10", "jour5fin(1i)"=>"2017", "jour5fin(2i)"=>"10", "jour5fin(3i)"=>"3", "jour5fin(4i)"=>"11", "jour5fin(5i)"=>"10", "jour6debut(1i)"=>"2017", "jour6debut(2i)"=>"10", "jour6debut(3i)"=>"3", "jour6debut(4i)"=>"11", "jour6debut(5i)"=>"10", "jour6fin(1i)"=>"2017", "jour6fin(2i)"=>"10", "jour6fin(3i)"=>"3", "jour6fin(4i)"=>"11", "jour6fin(5i)"=>"10", "jour7debut(1i)"=>"2017", "jour7debut(2i)"=>"10", "jour7debut(3i)"=>"3", "jour7debut(4i)"=>"11", "jour7debut(5i)"=>"10", "jour7fin(1i)"=>"2017", "jour7fin(2i)"=>"10", "jour7fin(3i)"=>"3", "jour7fin(4i)"=>"11", "jour7fin(5i)"=>"10", "permissejournum"=>"", "permissejourdate(1i)"=>"2017", "permissejourdate(2i)"=>"10", "permissejourdate(3i)"=>"3", "permissejourexp(1i)"=>"2017", "permissejourexp(2i)"=>"10", "permissejourexp(3i)"=>"3", "permissejourloc"=>"", "video"=>"true", "periodeessai"=>"true"}, "commit"=>"Créer le contrat", "id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.9ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/contrats/1
+Completed 302 Found in 31ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:42:41 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 66.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:50:02 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (5.6ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 106ms (Views: 90.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:50:19 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (5.9ms)
+  Rendered shared/_navbar.html.erb (5.4ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 98ms (Views: 79.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:50:38 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (5.6ms)
+  Rendered shared/_footer.html.erb (1.7ms)
+Completed 200 OK in 80ms (Views: 70.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:50:55 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 70ms (Views: 64.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:51:16 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (4.0ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 60ms (Views: 53.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:51:32 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.5ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+  Rendered shared/_footer.html.erb (4.0ms)
+Completed 200 OK in 101ms (Views: 94.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:51:35 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (3.4ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 104ms (Views: 93.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:51:59 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 57.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:52:17 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 60.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:52:32 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navbar.html.erb (4.1ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 95ms (Views: 75.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:54:58 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (7.4ms)
+  Rendered shared/_navbar.html.erb (7.5ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 120ms (Views: 95.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:55:34 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 50.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 10:55:36 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (28.5ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (1.5ms)
+Completed 200 OK in 3084ms (Views: 0.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 10:57:23 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (30.9ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.4ms)
+Completed 200 OK in 2905ms (Views: 0.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/" for 127.0.0.1 at 2017-10-05 10:57:42 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (1.0ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (11.6ms)
+  Rendered shared/_navbar.html.erb (6.6ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 109ms (Views: 101.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-05 10:57:45 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (1.0ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (98.0ms)
+  Rendered contrats/edit.html.erb within layouts/application (101.6ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 181ms (Views: 156.7ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/contrats/1" for 127.0.0.1 at 2017-10-05 10:57:47 +0200
+Processing by ContratsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ESy6UnTcwOeixNA5TCGkk6UBY4p3pdN1fftgmJCWcCkAgGJd+q6gsXvLI2+udGMOfiw/sDFp5C4LtJqIbc34qg==", "contrat"=>{"empcivilite"=>"Monsieur", "prenom"=>"Mathieu", "nom"=>"Abeille", "adresse"=>"6 Rue du Commandeur, 75014 Paris, France", "birthdate(1i)"=>"1991", "birthdate(2i)"=>"11", "birthdate(3i)"=>"9", "birthplace"=>"Marseille", "nationalite"=>"France", "nsecu"=>"191111315526108", "remuneration"=>"23", "nomposte"=>"Serveur", "jour1"=>"true", "jour2"=>"true", "jour3"=>"true", "jour4"=>"true", "jour5"=>"true", "jour6"=>"true", "jour7"=>"true", "jour1debut(1i)"=>"2017", "jour1debut(2i)"=>"10", "jour1debut(3i)"=>"3", "jour1debut(4i)"=>"07", "jour1debut(5i)"=>"00", "jour1fin(1i)"=>"2017", "jour1fin(2i)"=>"10", "jour1fin(3i)"=>"3", "jour1fin(4i)"=>"17", "jour1fin(5i)"=>"00", "jour2debut(1i)"=>"2017", "jour2debut(2i)"=>"10", "jour2debut(3i)"=>"4", "jour2debut(4i)"=>"08", "jour2debut(5i)"=>"00", "jour2fin(1i)"=>"2017", "jour2fin(2i)"=>"10", "jour2fin(3i)"=>"4", "jour2fin(4i)"=>"17", "jour2fin(5i)"=>"00", "jour3debut(1i)"=>"2017", "jour3debut(2i)"=>"10", "jour3debut(3i)"=>"3", "jour3debut(4i)"=>"11", "jour3debut(5i)"=>"10", "jour3fin(1i)"=>"2017", "jour3fin(2i)"=>"10", "jour3fin(3i)"=>"3", "jour3fin(4i)"=>"11", "jour3fin(5i)"=>"10", "jour4debut(1i)"=>"2017", "jour4debut(2i)"=>"10", "jour4debut(3i)"=>"3", "jour4debut(4i)"=>"11", "jour4debut(5i)"=>"10", "jour4fin(1i)"=>"2017", "jour4fin(2i)"=>"10", "jour4fin(3i)"=>"3", "jour4fin(4i)"=>"11", "jour4fin(5i)"=>"10", "jour5debut(1i)"=>"2017", "jour5debut(2i)"=>"10", "jour5debut(3i)"=>"3", "jour5debut(4i)"=>"11", "jour5debut(5i)"=>"10", "jour5fin(1i)"=>"2017", "jour5fin(2i)"=>"10", "jour5fin(3i)"=>"3", "jour5fin(4i)"=>"11", "jour5fin(5i)"=>"10", "jour6debut(1i)"=>"2017", "jour6debut(2i)"=>"10", "jour6debut(3i)"=>"3", "jour6debut(4i)"=>"11", "jour6debut(5i)"=>"10", "jour6fin(1i)"=>"2017", "jour6fin(2i)"=>"10", "jour6fin(3i)"=>"3", "jour6fin(4i)"=>"11", "jour6fin(5i)"=>"10", "jour7debut(1i)"=>"2017", "jour7debut(2i)"=>"10", "jour7debut(3i)"=>"3", "jour7debut(4i)"=>"11", "jour7debut(5i)"=>"10", "jour7fin(1i)"=>"2017", "jour7fin(2i)"=>"10", "jour7fin(3i)"=>"3", "jour7fin(4i)"=>"11", "jour7fin(5i)"=>"10", "permissejournum"=>"", "permissejourdate(1i)"=>"2017", "permissejourdate(2i)"=>"10", "permissejourdate(3i)"=>"3", "permissejourexp(1i)"=>"2017", "permissejourexp(2i)"=>"10", "permissejourexp(3i)"=>"3", "permissejourloc"=>"", "video"=>"true", "periodeessai"=>"true"}, "commit"=>"Créer le contrat", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/contrats/1
+Completed 302 Found in 23ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:57:47 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 62.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:00:55 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 73ms (Views: 56.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:01:59 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 59.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:02:46 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 51.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:03:34 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (3.6ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 62ms (Views: 56.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:04:09 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 56.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:04:18 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (3.0ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 48.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:04:37 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (3.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 56.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:05:23 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (3.5ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 62ms (Views: 56.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:06:09 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 56ms (Views: 49.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:06:36 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (4.3ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 48.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:07:15 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (1.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `poste' for #<Contrat:0x00007fdf673ef870>):
+    4: 
+    5: 
+    6: 
+    7: <p>  Pour un poste de <%= @contrat.poste %> total <b>
+    8: 
+    9:       <% nombreheure = 0 %>
+   10:     <% nombreheure = (@contrat.jour1fin - @contrat.jour1debut) if @contrat.jour1 == true %>
+  
+app/views/contrats/show.html.erb:7:in `_app_views_contrats_show_html_erb__2368233641748064572_70298743302420'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (160.9ms)
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:07:35 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 84ms (Views: 73.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:08:03 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 53.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:08:20 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 53.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:08:33 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (3.5ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 55.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:09:12 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 59.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 11:09:32 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 61.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 11:09:39 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (16.5ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (2.9ms)
+Completed 200 OK in 2969ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+

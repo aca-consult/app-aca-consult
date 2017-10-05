@@ -6,8 +6,8 @@
   <div class="table-row">
     <%= contrat.nom %>
     <%= contrat.prenom %>
-    <%= link_to ' Générer le contrat', contrat_path(contrat, format: 'pdf'), class: 'btn btn-medium btn-lg pull-right margin' %>
-    <%= link_to ' Modifier', edit_contrat_path(contrat), class: 'btn btn-medium btn-lg pull-right margin'   %>
+    <%= link_to ' Dernier contrat', contrat_path(contrat, format: 'pdf'), class: 'btn btn-medium btn-lg pull-right margin' %>
+    <%= link_to ' Nouveau contrat', edit_contrat_path(contrat), class: 'btn btn-medium btn-lg pull-right margin'   %>
 
 </div>
   <% end %>

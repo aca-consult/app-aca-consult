@@ -286,11 +286,10 @@ Vous avez mal rempli le formulaire d'horaire !</b>
 <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == true && @contrat.jour4 == true && @contrat.jour5 == true && @contrat.jour6 == true && @contrat.jour7 == false %>
 <%= @contrat.jour6debut.strftime('%d/%m/%Y') %>
 <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == true && @contrat.jour4 == true && @contrat.jour5 == true && @contrat.jour6 == true && @contrat.jour7 == true %>
+<%= @contrat.jour7debut.strftime('%d/%m/%Y') %>
 <% else %>
-Vérifiez les jours que vous avez coché dans le formulair de planning! Une erreur est survenue.
+Vérifiez les jours que vous avez coché dans le formulaire de planning! Une erreur est survenue.
 <% end %>
-
-
 </b>
 
 </p>
