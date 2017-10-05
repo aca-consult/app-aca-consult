@@ -274,19 +274,19 @@ Vérifiez les jours que vous avez coché dans le formulair de planning! Une erre
 <% if @contrat.jour1 == false %>
 Vous avez mal rempli le formulaire d'horaire !</b>
 <% elsif @contrat.jour1 == true && @contrat.jour2 == false %>
-  <%= @contrat.jour1debut.strftime('%d/%m/%Y') %>
+  <%= @contrat.jour1fin.strftime('%d/%m/%Y') %>
 <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == false %>
-<%= @contrat.jour2debut.strftime('%d/%m/%Y') %>
+<%= @contrat.jour2fin.strftime('%d/%m/%Y') %>
 <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == true && @contrat.jour4 == false %>
-<%= @contrat.jour3debut.strftime('%d/%m/%Y') %>
+<%= @contrat.jour3fin.strftime('%d/%m/%Y') %>
 <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour4 == true && @contrat.jour4 == true && @contrat.jour5 == false %>
-<%= @contrat.jour4debut.strftime('%d/%m/%Y') %>
+<%= @contrat.jour4fin.strftime('%d/%m/%Y') %>
 <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == true && @contrat.jour4 == true && @contrat.jour5 == true && @contrat.jour6 == false %>
-<%= @contrat.jour5debut.strftime('%d/%m/%Y') %>
+<%= @contrat.jour5fin.strftime('%d/%m/%Y') %>
 <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == true && @contrat.jour4 == true && @contrat.jour5 == true && @contrat.jour6 == true && @contrat.jour7 == false %>
-<%= @contrat.jour6debut.strftime('%d/%m/%Y') %>
+<%= @contrat.jour6fin.strftime('%d/%m/%Y') %>
 <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == true && @contrat.jour4 == true && @contrat.jour5 == true && @contrat.jour6 == true && @contrat.jour7 == true %>
-<%= @contrat.jour7debut.strftime('%d/%m/%Y') %>
+<%= @contrat.jour7fin.strftime('%d/%m/%Y') %>
 <% else %>
 Vérifiez les jours que vous avez coché dans le formulaire de planning! Une erreur est survenue.
 <% end %>
@@ -357,7 +357,7 @@ heures
 
 <br/>
 <u><h4>ARTICLE <% if @contrat.periodeessai == true %>6<% else %>7 <% end %> : DUREE DU TRAVAIL</h4></u>
-<p>La durée hebdomadaire de travail de <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> est fixée à <b><%= nombreheure/3600 %></b> heures selon la répartition suivante :
+<p>La durée hebdomadaire de travail de <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> est fixée à <b><%= nombreheure/3600 %></b> hfin selon la répartition suivante :
 </p>
 <div class="alinea"><ul style="list-style-type:none">
 <% if @contrat.jour1 == true %> <li>- Le<b><%= @contrat.jour1debut.strftime('%d/%m/%Y') %></b>, de  <%= @contrat.jour1debut.strftime('%HH%M') %> à <%= @contrat.jour1fin.strftime('%HH%M') %>. </li> <% end %>
