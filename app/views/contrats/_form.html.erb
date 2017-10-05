@@ -55,16 +55,14 @@
 <!-- emploi -->
     <div class="row">
       <div class="col-sm-2">
-        <br/>   <button type="button" class="btn-medium" data-toggle="modal" data-target="#planning">
-          Horaires de l'employé
-        </button>
+        <br/>
       </div>
 
         <div class="col-sm-4">
             <%= f.input :remuneration, label: "Rémunération" %>
         </div>
         <div class="col-sm-4">
-          <%= f.input :nomposte, label: "Intitulé du poste" %>
+          <%= f.input :nomposte, collection: [ "Serveur", "Chef de rang", "Runner"] ,  selected: "Serveur", label: "Intitulé du poste" %>
         </div>
     </div>
   </div>
@@ -155,7 +153,9 @@
     </div>
   </div>
 </div>
- <center>
+ <center><button type="button" class="btn-medium" data-toggle="modal" data-target="#planning">
+          Horaires de l'employé
+        </button>
   <%= f.input :video, as: :boolean, checked_value: true, unchecked_value: false, label: "Présence de caméra de surveillance" %>
   <%= f.input :periodeessai, as: :boolean, checked_value: true, unchecked_value: false, label: "La période d'essai a été faite" %>
 
