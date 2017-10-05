@@ -12743,3 +12743,2267 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 104ms (Views: 81.5ms | ActiveRecord: 19.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-10-03 21:59:06 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (63.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (325.4ms)
+  Rendered shared/_navbar.html.erb (28.0ms)
+  Rendered shared/_footer.html.erb (12.1ms)
+Completed 200 OK in 900ms (Views: 778.6ms | ActiveRecord: 63.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-10-03 21:59:09 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wuLqs+nlK9Uvn+Wf53zph9oIAs2WjdnU4iAyl/yK7a/Vxc9XkJNqlaE3zS5vHADf36Y+pElXKh89hDwt+vB9gw=="}
+  [1m[36mUser Load (29.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (27.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 103ms (ActiveRecord: 56.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-03 21:59:09 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (19.3ms)
+  Rendered shared/_navbar.html.erb (13.1ms)
+  Rendered shared/_footer.html.erb (3.2ms)
+Completed 200 OK in 260ms (Views: 256.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 21:59:17 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (8.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (133.4ms)
+Completed 200 OK in 803ms (Views: 783.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:00:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (106.8ms)
+Completed 200 OK in 5337ms (Views: 5321.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:00:31 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 3883ms (Views: 3879.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:00:40 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 100ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:01:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 4237ms (Views: 4234.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:01:24 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 4001ms (Views: 3992.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:01:36 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 3746ms (Views: 3737.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:01:47 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 3926ms (Views: 3921.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:02:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 103ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:02:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 90ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:02:59 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 4302ms (Views: 4298.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:04:07 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (84.3ms)
+Completed 500 Internal Server Error in 1607ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ackground-image": expected ";", was ": linear-gradie..."):
+     6:     <title>Aca-Consult</title>
+     7:     <%= csrf_meta_tags %>
+     8:     <%= action_cable_meta_tag %>
+     9:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    10:   </head>
+    11:   <body>
+    12:     <%= render 'shared/navbar' unless @skip_footer %>
+  
+app/assets/stylesheets/pages/_logform.scss:36
+app/assets/stylesheets/pages/_index.scss:4
+app/assets/stylesheets/application.scss:15
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___2392978027820175071_70344019003980'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.6ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.4ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.6ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (202.1ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:04:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 4009ms (Views: 4007.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:07:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (67.5ms)
+Completed 200 OK in 4307ms (Views: 4290.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:07:39 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-03 22:08:22 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.2ms)
+  Rendered shared/_navbar.html.erb (4.6ms)
+  Rendered shared/_footer.html.erb (1.9ms)
+Completed 200 OK in 77ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:08:28 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 143ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-03 22:08:30 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4wnYfSFObOWNtRf91k6jbxPDZXwnBvQFSfXXgJ71QVpL7GUUhXQvP5JbV2w8dQ+nreqF83ZZYm2MeZuJdVEqpw==", "user"=>{"email"=>"mathieu.abeille@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Connexion"}
+  [1m[36mUser Load (36.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "mathieu.abeille@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (39.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-10-03 20:08:30.708086"], ["last_sign_in_at", "2017-10-03 16:17:58.568184"], ["sign_in_count", 6], ["updated_at", "2017-10-03 20:08:30.719786"], ["id", 1]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 314ms (ActiveRecord: 78.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-03 22:08:30 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (19.0ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 60.0ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/contrats" for 127.0.0.1 at 2017-10-03 22:08:33 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (18.8ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (72.1ms)
+  Rendered shared/_navbar.html.erb (4.9ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 171ms (Views: 114.7ms | ActiveRecord: 37.5ms)
+
+
+Started GET "/contrats" for 127.0.0.1 at 2017-10-03 22:08:34 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (5.8ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (9.1ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 53.3ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-04 15:49:53 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (28.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1024.6ms)
+  Rendered shared/_navbar.html.erb (34.2ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 1173ms (Views: 1169.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-04 15:49:59 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 247ms (Views: 109.5ms | ActiveRecord: 103.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-04 15:50:02 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V06atHmkG2zwCfeeNDRTY988x89qde2Wou/+fYN38AGNDarwQXs/aCSE9mjKrjcFEvpoO0I8PxXkBdmJ5Uh4BA==", "user"=>{"email"=>"mathieu.abeille@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Connexion"}
+  [1m[36mUser Load (31.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "mathieu.abeille@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (18.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-10-04 13:50:02.317973"], ["last_sign_in_at", "2017-10-03 20:08:30.708086"], ["sign_in_count", 7], ["updated_at", "2017-10-04 13:50:02.328432"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 289ms (ActiveRecord: 59.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-04 15:50:02 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 61.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contrats" for 127.0.0.1 at 2017-10-04 15:50:07 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (13.3ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (87.4ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 175ms (Views: 111.2ms | ActiveRecord: 29.7ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 15:50:20 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (8.8ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (82.0ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 9.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    164: L’employeur embauche <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> à compter du <b><%= @contrat.startdate %></b>, en qualité de <b><%= @contrat.nomposte %></b> pour une période de <b><%= @contrat.dureecontrat
+    165:    %></b>. La présence du salarié est fixée en fonction des nécessités du service, conformément aux dispositions en vigueur. En tout état de cause, le salarié devra indiquer les heures de travail qu’il a accomplies sur un cahier d’émargement.</p>
+    166: 
+    167: <p>Le présent contrat prendra automatiquement fin à l’échéance du terme prévu, soit le <b><%= @contrat.datefin.strftime('%d/%m/%Y')
+    168:    %> </b>
+    169: 
+    170: </p>
+  
+app/views/contrats/reporte.pdf.erb:167:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341742652420'
+app/controllers/contrats_controller.rb:21:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:18:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (160.4ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 15:51:15 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (13.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    164: L’employeur embauche <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> à compter du <b><%= @contrat.startdate %></b>, en qualité de <b><%= @contrat.nomposte %></b> pour une période de <b><%= @contrat.dureecontrat
+    165:    %></b>. La présence du salarié est fixée en fonction des nécessités du service, conformément aux dispositions en vigueur. En tout état de cause, le salarié devra indiquer les heures de travail qu’il a accomplies sur un cahier d’émargement.</p>
+    166: 
+    167: <p>Le présent contrat prendra automatiquement fin à l’échéance du terme prévu, soit le <b><%= @contrat.datefin.strftime('%d/%m/%Y') %> </b>
+    168: 
+    169: </p>
+    170: 
+  
+app/views/contrats/reporte.pdf.erb:167:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341733025720'
+app/controllers/contrats_controller.rb:21:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:18:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (147.9ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Addday (20171004135447)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (34.9ms)[0m  [1m[35mALTER TABLE "contrats" ADD "jour1" boolean[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "contrats" ADD "jour2" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" ADD "jour3" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" ADD "jour4" boolean[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" ADD "jour5" boolean[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" ADD "jour6" boolean[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" ADD "jour7" boolean[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171004135447"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:00:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (12.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (159.9ms)
+  Rendered contrats/edit.html.erb within layouts/application (163.7ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 360ms (Views: 228.2ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:00:37 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (72.7ms)
+  Rendered contrats/edit.html.erb within layouts/application (79.6ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 143ms (Views: 134.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:00:51 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (2.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (95.0ms)
+  Rendered contrats/edit.html.erb within layouts/application (98.5ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 166ms (Views: 155.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:01:23 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (74.8ms)
+  Rendered contrats/edit.html.erb within layouts/application (78.6ms)
+  Rendered shared/_navbar.html.erb (4.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 139ms (Views: 130.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:02:58 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (101.9ms)
+  Rendered contrats/edit.html.erb within layouts/application (106.4ms)
+  Rendered shared/_navbar.html.erb (4.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 182ms (Views: 175.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:04:15 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.9ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (157.3ms)
+  Rendered contrats/edit.html.erb within layouts/application (164.1ms)
+  Rendered shared/_navbar.html.erb (4.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 272ms (Views: 241.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:04:19 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (108.2ms)
+  Rendered contrats/edit.html.erb within layouts/application (110.7ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 164ms (Views: 159.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:05:40 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (78.5ms)
+  Rendered contrats/edit.html.erb within layouts/application (80.8ms)
+  Rendered shared/_navbar.html.erb (3.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 141ms (Views: 134.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:06:16 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (62.5ms)
+  Rendered contrats/edit.html.erb within layouts/application (64.8ms)
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 122ms (Views: 115.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:06:45 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (70.4ms)
+  Rendered contrats/edit.html.erb within layouts/application (73.1ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 132ms (Views: 125.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:08:13 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (130.4ms)
+  Rendered contrats/edit.html.erb within layouts/application (135.4ms)
+  Rendered shared/_navbar.html.erb (4.2ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 230ms (Views: 205.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:09:47 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (123.4ms)
+  Rendered contrats/edit.html.erb within layouts/application (129.4ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 214ms (Views: 200.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:10:55 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (67.8ms)
+  Rendered contrats/edit.html.erb within layouts/application (70.7ms)
+  Rendered shared/_navbar.html.erb (3.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 129ms (Views: 123.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-04 16:12:37 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (37.9ms)
+  Rendered shared/_navbar.html.erb (6.2ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 141ms (Views: 134.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/contrats/new" for 127.0.0.1 at 2017-10-04 16:12:41 +0200
+Processing by ContratsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/new.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (130.7ms)
+  Rendered contrats/new.html.erb within layouts/application (133.9ms)
+  Rendered shared/_navbar.html.erb (4.3ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 233ms (Views: 198.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/new" for 127.0.0.1 at 2017-10-04 16:13:12 +0200
+Processing by ContratsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/new.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (106.2ms)
+  Rendered contrats/new.html.erb within layouts/application (108.5ms)
+  Rendered shared/_navbar.html.erb (6.8ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 184ms (Views: 177.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contrats/new" for 127.0.0.1 at 2017-10-04 16:14:05 +0200
+Processing by ContratsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/new.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (77.8ms)
+  Rendered contrats/new.html.erb within layouts/application (81.7ms)
+  Rendered shared/_navbar.html.erb (4.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 145ms (Views: 138.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/new" for 127.0.0.1 at 2017-10-04 16:14:56 +0200
+Processing by ContratsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/new.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (86.1ms)
+  Rendered contrats/new.html.erb within layouts/application (90.2ms)
+  Rendered shared/_navbar.html.erb (4.5ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 148ms (Views: 143.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contrats/new" for 127.0.0.1 at 2017-10-04 16:16:08 +0200
+Processing by ContratsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/new.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (72.8ms)
+  Rendered contrats/new.html.erb within layouts/application (75.6ms)
+  Rendered shared/_navbar.html.erb (3.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 133ms (Views: 126.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/new" for 127.0.0.1 at 2017-10-04 16:16:33 +0200
+Processing by ContratsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/new.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (66.5ms)
+  Rendered contrats/new.html.erb within layouts/application (68.8ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 127ms (Views: 121.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contrats/new" for 127.0.0.1 at 2017-10-04 16:17:01 +0200
+Processing by ContratsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/new.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (128.3ms)
+  Rendered contrats/new.html.erb within layouts/application (132.0ms)
+  Rendered shared/_navbar.html.erb (4.8ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 198ms (Views: 192.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats" for 127.0.0.1 at 2017-10-04 16:23:39 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (8.3ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (81.4ms)
+  Rendered shared/_navbar.html.erb (5.1ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 257ms (Views: 142.5ms | ActiveRecord: 25.5ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 16:23:43 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (96.2ms)
+  Rendered contrats/edit.html.erb within layouts/application (99.8ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 176ms (Views: 161.5ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/contrats/1" for 127.0.0.1 at 2017-10-04 16:23:45 +0200
+Processing by ContratsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ut/QFy1mmYyBKbTzRnrLEy3Vgb7M5pwcmPZeZIJvF8tDcwgYoxT52lgmR6WkLwyO9vjdhIoqq0fuuaR0fzSfSA==", "contrat"=>{"empcivilite"=>"Monsieur", "prenom"=>"Mathieu", "nom"=>"Abeille", "adresse"=>"6 Rue du Commandeur, 75014 Paris, France", "birthdate(1i)"=>"1991", "birthdate(2i)"=>"11", "birthdate(3i)"=>"9", "birthplace"=>"Marseille", "nationalite"=>"France", "nsecu"=>"191111315526108", "remuneration"=>"23", "nomposte"=>"Serveur", "jour1"=>"false", "jour2"=>"false", "jour3"=>"false", "jour4"=>"false", "jour5"=>"false", "jour6"=>"false", "jour7"=>"false", "jour1debut(1i)"=>"2017", "jour1debut(2i)"=>"10", "jour1debut(3i)"=>"3", "jour1debut(4i)"=>"11", "jour1debut(5i)"=>"10", "jour1fin(1i)"=>"2017", "jour1fin(2i)"=>"10", "jour1fin(3i)"=>"3", "jour1fin(4i)"=>"11", "jour1fin(5i)"=>"10", "jour2debut(1i)"=>"2017", "jour2debut(2i)"=>"10", "jour2debut(3i)"=>"3", "jour2debut(4i)"=>"11", "jour2debut(5i)"=>"10", "jour2fin(1i)"=>"2017", "jour2fin(2i)"=>"10", "jour2fin(3i)"=>"3", "jour2fin(4i)"=>"11", "jour2fin(5i)"=>"10", "jour3debut(1i)"=>"2017", "jour3debut(2i)"=>"10", "jour3debut(3i)"=>"3", "jour3debut(4i)"=>"11", "jour3debut(5i)"=>"10", "jour3fin(1i)"=>"2017", "jour3fin(2i)"=>"10", "jour3fin(3i)"=>"3", "jour3fin(4i)"=>"11", "jour3fin(5i)"=>"10", "jour4debut(1i)"=>"2017", "jour4debut(2i)"=>"10", "jour4debut(3i)"=>"3", "jour4debut(4i)"=>"11", "jour4debut(5i)"=>"10", "jour4fin(1i)"=>"2017", "jour4fin(2i)"=>"10", "jour4fin(3i)"=>"3", "jour4fin(4i)"=>"11", "jour4fin(5i)"=>"10", "jour5debut(1i)"=>"2017", "jour5debut(2i)"=>"10", "jour5debut(3i)"=>"3", "jour5debut(4i)"=>"11", "jour5debut(5i)"=>"10", "jour5fin(1i)"=>"2017", "jour5fin(2i)"=>"10", "jour5fin(3i)"=>"3", "jour5fin(4i)"=>"11", "jour5fin(5i)"=>"10", "jour6debut(1i)"=>"2017", "jour6debut(2i)"=>"10", "jour6debut(3i)"=>"3", "jour6debut(4i)"=>"11", "jour6debut(5i)"=>"10", "jour6fin(1i)"=>"2017", "jour6fin(2i)"=>"10", "jour6fin(3i)"=>"3", "jour6fin(4i)"=>"11", "jour6fin(5i)"=>"10", "jour7debut(1i)"=>"2017", "jour7debut(2i)"=>"10", "jour7debut(3i)"=>"3", "jour7debut(4i)"=>"11", "jour7debut(5i)"=>"10", "jour7fin(1i)"=>"2017", "jour7fin(2i)"=>"10", "jour7fin(3i)"=>"3", "jour7fin(4i)"=>"11", "jour7fin(5i)"=>"10", "permissejournum"=>"", "permissejourdate(1i)"=>"2017", "permissejourdate(2i)"=>"10", "permissejourdate(3i)"=>"3", "permissejourexp(1i)"=>"2017", "permissejourexp(2i)"=>"10", "permissejourexp(3i)"=>"3", "permissejourloc"=>"", "video"=>"true", "periodeessai"=>"true"}, "commit"=>"Créer le contrat", "id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "contrats" SET "jour1" = $1, "jour2" = $2, "jour3" = $3, "jour4" = $4, "jour5" = $5, "jour6" = $6, "jour7" = $7, "updated_at" = $8 WHERE "contrats"."id" = $9[0m  [["jour1", "f"], ["jour2", "f"], ["jour3", "f"], ["jour4", "f"], ["jour5", "f"], ["jour6", "f"], ["jour7", "f"], ["updated_at", "2017-10-04 14:23:45.209494"], ["id", 1]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/contrats/1
+Completed 302 Found in 39ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-04 16:23:45 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 77.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 16:24:05 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (22.9ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    164: L’employeur embauche <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> à compter du <b><%= @contrat.startdate %></b>, en qualité de <b><%= @contrat.nomposte %></b> pour une période de <b><%= @contrat.dureecontrat
+    165:    %></b>. La présence du salarié est fixée en fonction des nécessités du service, conformément aux dispositions en vigueur. En tout état de cause, le salarié devra indiquer les heures de travail qu’il a accomplies sur un cahier d’émargement.</p>
+    166: 
+    167: <p>Le présent contrat prendra automatiquement fin à l’échéance du terme prévu, soit le <b><%= @contrat.datefin.strftime('%d/%m/%Y') %> </b>
+    168: 
+    169: </p>
+    170: 
+  
+app/views/contrats/reporte.pdf.erb:167:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341736490420'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (167.6ms)
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-04 16:25:01 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (4.7ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 89ms (Views: 81.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:09:18 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (10.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.7ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (879.9ms)
+Completed 500 Internal Server Error in 929ms (ActiveRecord: 11.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `jour1' for #<#<Class:0x00007ff36cb6adc0>:0x00007ff36c5a7758>):
+    162: 
+    163: <p>
+    164: L’employeur embauche <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b> à compter du <b><%= @contrat.jour1debut.strftime('%d/%m/%Y') %></b>, en qualité de <b><%= @contrat.nomposte %></b> pour une période de <b>
+    165: <% if jour1 == false %>
+    166: Vous avez mal rempli le formulaire d'horaire !</b>
+    167: <% elsif jour1 == true && jour2 == false %>
+    168: 1 </b> jour.
+  
+app/views/contrats/reporte.pdf.erb:165:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341735820460'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (174.6ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:12:38 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (20.5ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 2.2ms)
+
+
+  
+SyntaxError (/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:165: syntax error, unexpected tIVAR, expecting '('
+'.freeze; if @contrat.@contrat.jour1 == false 
+                              ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:167: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.@contrat.jour1 == t...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:167: syntax error, unexpected tIVAR, expecting '('
+...r1 == true && @contrat.@contrat.jour2 == false 
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:169: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.@contrat.jour1 == t...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:169: syntax error, unexpected tIVAR, expecting '('
+...1 == true &&  @contrat.@contrat.jour2 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:169: syntax error, unexpected tIVAR, expecting '('
+...r2 == true && @contrat.@contrat.jour3 == false 
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:171: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.@contrat.jour1 == t...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:171: syntax error, unexpected tIVAR, expecting '('
+...1 == true &&  @contrat.@contrat.jour2 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:171: syntax error, unexpected tIVAR, expecting '('
+...r2 == true && @contrat.@contrat.jour3 == true && jour4 == fa...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.@contrat.jour1 == t...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected tIVAR, expecting '('
+...1 == true &&  @contrat.@contrat.jour2 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected tIVAR, expecting '('
+...r2 == true && @contrat.@contrat.jour4 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected tIVAR, expecting '('
+...r4 == true && @contrat.@contrat.jour4 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected tIVAR, expecting '('
+...r4 == true && @contrat.@contrat.jour5 == false 
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.@contrat.jour1 == t...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+...1 == true &&  @contrat.@contrat.jour2 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+...r2 == true && @contrat.@contrat.jour3 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+...r3 == true && @contrat.@contrat.jour4 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+...r4 == true && @contrat.@contrat.jour5 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+...r5 == true && @contrat.@contrat.jour6 == false 
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.@contrat.jour1 == t...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+...1 == true &&  @contrat.@contrat.jour2 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+...r2 == true && @contrat.@contrat.jour3 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+...r3 == true && @contrat.@contrat.jour4 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+...r4 == true && @contrat.@contrat.jour5 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+...r5 == true && @contrat.@contrat.jour6 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+...r6 == true && @contrat.@contrat.jour7 == false 
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.@contrat.jour1 == t...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+...1 == true &&  @contrat.@contrat.jour2 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+...r2 == true && @contrat.@contrat.jour3 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+...r3 == true && @contrat.@contrat.jour4 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+...r4 == true && @contrat.@contrat.jour5 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+...r5 == true && @contrat.@contrat.jour6 == true && @contrat.@c...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+...r6 == true && @contrat.@contrat.jour7 == true 
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:347: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/contrats/reporte.pdf.erb:165: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:167: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:167: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:169: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:169: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:169: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:171: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:171: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:171: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:173: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:175: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:177: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:179: syntax error, unexpected tIVAR, expecting '('
+app/views/contrats/reporte.pdf.erb:347: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (165.0ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:14:44 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (12.8ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.8ms)
+
+
+  
+SyntaxError (/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:166: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.jour1 == true && @contrat.jour2 == false 
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:168: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.jour1 == true &&  @...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:170: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.jour1 == true &&  @...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:172: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.jour1 == true &&  @...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:174: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.jour1 == true &&  @...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:176: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.jour1 == true &&  @...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:178: syntax error, unexpected keyword_elsif, expecting keyword_end
+'.freeze; elsif @contrat.jour1 == true &&  @...
+               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:346: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/contrats/reporte.pdf.erb:166: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:168: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:170: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:172: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:174: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:176: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:178: syntax error, unexpected keyword_elsif, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:346: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (181.1ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:17:53 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (39.1ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `pediodeessai' for #<Contrat:0x00007ff36c5ef670>
+Did you mean?  periodeessai
+               periodeessai?
+               periodeessai=):
+    214: <br/>
+    215: <u><h4>ARTICLE 4 : LA PERIODE D’ESSAI
+    216: 
+    217: <% if @contrat.pediodeessai == true %><% else %>
+    218: </h4></u>
+    219: <p>Il est convenu que <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b>  effectuera une période d’essai de <b>À CALCULER</b>.  (article L. 1242-10 du Code du Travail) qui expirera au plus tard le <b>À CALCULER</b> à minuit</p>
+    220: <p>Il est précisé que la période d’essai s’entend d’une période de travail effectif. Toute suspension de l’exécution du contrat, quel qu’en soit le motif, entraînera une prolongation de la période d’essai d’une durée équivalente à celle de la suspension.
+  
+app/views/contrats/reporte.pdf.erb:217:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341736734460'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (165.9ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:18:53 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (33.5ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `pediodeessai' for #<Contrat:0x00007ff36cb814f8>
+Did you mean?  periodeessai
+               periodeessai?
+               periodeessai=):
+    214: <br/>
+    215: <u><h4>ARTICLE 4 : LA PERIODE D’ESSAI
+    216: 
+    217: <% if @contrat.pediodeessai == true %>
+    218: 
+    219: <% else %>
+    220: </h4></u>
+  
+app/views/contrats/reporte.pdf.erb:217:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341738877180'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (158.2ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:19:10 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (51.4ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `pediodeessai?' for #<Contrat:0x00007ff367cd27a8>
+Did you mean?  periodeessai?
+               periodeessai
+               periodeessai=):
+    214: <br/>
+    215: <u><h4>ARTICLE 4 : LA PERIODE D’ESSAI
+    216: 
+    217: <% if @contrat.pediodeessai? %>
+    218: 
+    219: <% else %>
+    220: </h4></u>
+  
+app/views/contrats/reporte.pdf.erb:217:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341697606820'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (203.4ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:19:30 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (64.9ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pediodeessai' for #<Contrat:0x00007ff36a4be168>
+Did you mean?  periodeessai
+               periodeessai?
+               periodeessai=):
+    237: 
+    238: <br/>
+    239: <% end %>
+    240: <u><h4>ARTICLE <% if @contrat.pediodeessai == true %>4<% else %>5 <% end %> : LIEU DE TRAVAIL</h4></u>
+    241: <p>Ces fonctions seront exercées à l'adresse suivante : <%= @contrat.user.adresseentreprise %></p>
+    242: <p>Il est toutefois précisé que le lieu de travail est donné à titre indicatif.</p>
+    243: <br/>
+  
+app/views/contrats/reporte.pdf.erb:240:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341718555060'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (181.9ms)
+Started GET "/contrats/" for 127.0.0.1 at 2017-10-04 17:19:34 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (7.4ms)
+  Rendered shared/_navbar.html.erb (5.1ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 103ms (Views: 97.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 17:19:36 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (126.1ms)
+  Rendered contrats/edit.html.erb within layouts/application (130.0ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 219ms (Views: 209.2ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/contrats/1" for 127.0.0.1 at 2017-10-04 17:20:47 +0200
+Processing by ContratsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36DBeYlukz+nywQEVS06leKWeZ37yzTz/RK1muxyVbrODBl2BxzzaX7E91K3eP0IObslp70HA6iLXU+KESndOQ==", "contrat"=>{"empcivilite"=>"Monsieur", "prenom"=>"Mathieu", "nom"=>"Abeille", "adresse"=>"6 Rue du Commandeur, 75014 Paris, France", "birthdate(1i)"=>"1991", "birthdate(2i)"=>"11", "birthdate(3i)"=>"9", "birthplace"=>"Marseille", "nationalite"=>"France", "nsecu"=>"191111315526108", "remuneration"=>"23", "nomposte"=>"Serveur", "jour1"=>"true", "jour2"=>"true", "jour3"=>"false", "jour4"=>"false", "jour5"=>"false", "jour6"=>"false", "jour7"=>"false", "jour1debut(1i)"=>"2017", "jour1debut(2i)"=>"10", "jour1debut(3i)"=>"3", "jour1debut(4i)"=>"07", "jour1debut(5i)"=>"00", "jour1fin(1i)"=>"2017", "jour1fin(2i)"=>"10", "jour1fin(3i)"=>"3", "jour1fin(4i)"=>"17", "jour1fin(5i)"=>"00", "jour2debut(1i)"=>"2017", "jour2debut(2i)"=>"10", "jour2debut(3i)"=>"4", "jour2debut(4i)"=>"08", "jour2debut(5i)"=>"00", "jour2fin(1i)"=>"2017", "jour2fin(2i)"=>"10", "jour2fin(3i)"=>"4", "jour2fin(4i)"=>"17", "jour2fin(5i)"=>"00", "jour3debut(1i)"=>"2017", "jour3debut(2i)"=>"10", "jour3debut(3i)"=>"3", "jour3debut(4i)"=>"11", "jour3debut(5i)"=>"10", "jour3fin(1i)"=>"2017", "jour3fin(2i)"=>"10", "jour3fin(3i)"=>"3", "jour3fin(4i)"=>"11", "jour3fin(5i)"=>"10", "jour4debut(1i)"=>"2017", "jour4debut(2i)"=>"10", "jour4debut(3i)"=>"3", "jour4debut(4i)"=>"11", "jour4debut(5i)"=>"10", "jour4fin(1i)"=>"2017", "jour4fin(2i)"=>"10", "jour4fin(3i)"=>"3", "jour4fin(4i)"=>"11", "jour4fin(5i)"=>"10", "jour5debut(1i)"=>"2017", "jour5debut(2i)"=>"10", "jour5debut(3i)"=>"3", "jour5debut(4i)"=>"11", "jour5debut(5i)"=>"10", "jour5fin(1i)"=>"2017", "jour5fin(2i)"=>"10", "jour5fin(3i)"=>"3", "jour5fin(4i)"=>"11", "jour5fin(5i)"=>"10", "jour6debut(1i)"=>"2017", "jour6debut(2i)"=>"10", "jour6debut(3i)"=>"3", "jour6debut(4i)"=>"11", "jour6debut(5i)"=>"10", "jour6fin(1i)"=>"2017", "jour6fin(2i)"=>"10", "jour6fin(3i)"=>"3", "jour6fin(4i)"=>"11", "jour6fin(5i)"=>"10", "jour7debut(1i)"=>"2017", "jour7debut(2i)"=>"10", "jour7debut(3i)"=>"3", "jour7debut(4i)"=>"11", "jour7debut(5i)"=>"10", "jour7fin(1i)"=>"2017", "jour7fin(2i)"=>"10", "jour7fin(3i)"=>"3", "jour7fin(4i)"=>"11", "jour7fin(5i)"=>"10", "permissejournum"=>"", "permissejourdate(1i)"=>"2017", "permissejourdate(2i)"=>"10", "permissejourdate(3i)"=>"3", "permissejourexp(1i)"=>"2017", "permissejourexp(2i)"=>"10", "permissejourexp(3i)"=>"3", "permissejourloc"=>"", "video"=>"true", "periodeessai"=>"true"}, "commit"=>"Créer le contrat", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "contrats" SET "jour1" = $1, "jour2" = $2, "jour1debut" = $3, "jour2debut" = $4, "jour1fin" = $5, "jour2fin" = $6, "updated_at" = $7 WHERE "contrats"."id" = $8[0m  [["jour1", "t"], ["jour2", "t"], ["jour1debut", "2017-10-03 07:00:00"], ["jour2debut", "2017-10-04 08:00:00"], ["jour1fin", "2017-10-03 17:00:00"], ["jour2fin", "2017-10-04 17:00:00"], ["updated_at", "2017-10-04 15:20:47.514273"], ["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/contrats/1
+Completed 302 Found in 25ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-04 17:20:47 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (36.3ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 101ms (Views: 95.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:20:48 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (42.6ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `pediodeessai' for #<Contrat:0x00007ff36c5bb528>
+Did you mean?  periodeessai
+               periodeessai?
+               periodeessai=):
+    237: 
+    238: <br/>
+    239: <% end %>
+    240: <u><h4>ARTICLE <% if @contrat.pediodeessai == true %>4<% else %>5 <% end %> : LIEU DE TRAVAIL</h4></u>
+    241: <p>Ces fonctions seront exercées à l'adresse suivante : <%= @contrat.user.adresseentreprise %></p>
+    242: <p>Il est toutefois précisé que le lieu de travail est donné à titre indicatif.</p>
+    243: <br/>
+  
+app/views/contrats/reporte.pdf.erb:240:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341735859300'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (164.8ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:23:24 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (26.9ms)
+  Rendering text template
+  Rendered text template (1.4ms)
+Sent data Reporte.pdf (12.9ms)
+Completed 200 OK in 3851ms (Views: 12.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/contrats/Admin" for 127.0.0.1 at 2017-10-04 17:24:09 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"Admin"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Contrat with 'id'=Admin):
+  
+app/controllers/contrats_controller.rb:79:in `set_contrat'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (166.5ms)
+Started GET "/admin" for 127.0.0.1 at 2017-10-04 17:24:14 +0200
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "contrats"[0m
+  [1m[36mContrat Load (1.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" ORDER BY "contrats"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices"[0m
+  [1m[36mInvoice Load (0.6ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" ORDER BY "invoices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" ORDER BY "reviews"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (36.9ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.6ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (16.8ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.2ms)
+  Rendering /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (6.7ms)
+Completed 200 OK in 965ms (Views: 164.6ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-10-04 17:24:17 +0200
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  Rendering /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (115.0ms)
+Completed 200 OK in 177ms (Views: 145.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/admin/user/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-10-04 17:24:24 +0200
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (26.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.6ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (4.4ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.6ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (54.5ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.8ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.6ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[36mInvoice Load (0.5ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices" WHERE "invoices"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices"[0m
+  [1m[36mInvoice Load (0.6ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices" ORDER BY invoices.id desc[0m
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (39.8ms)
+  [1m[36mContrat Load (0.9ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "contrats"[0m
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" ORDER BY contrats.id desc[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1[0m
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (26.9ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (29.5ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (316.3ms)
+Completed 200 OK in 381ms (Views: 336.8ms | ActiveRecord: 31.8ms)
+
+
+Started PUT "/admin/user/1/edit" for 127.0.0.1 at 2017-10-04 17:25:25 +0200
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qTzbaSsQjKPocYon1elf/nUxcmEgJEVKwx/8m5FSqQW4kANmpWLs9TF+eXE3vJhjrhwuW2bochG1UAaLbAkhhg==", "user"=>{"email"=>"mathieu.abeille@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"", "sign_in_count"=>"7", "current_sign_in_at"=>"October 04, 2017 13:50", "last_sign_in_at"=>"October 03, 2017 20:08", "current_sign_in_ip"=>"127.0.0.1", "last_sign_in_ip"=>"127.0.0.1", "nomentreprise"=>"ACA", "adresseentreprise"=>"9 rue d'arcole", "numerosiret"=>"SIRET", "numerocnaf"=>"CNAF", "formejuridique"=>"SARL", "sexerepresentant"=>"Masculin", "nomrepresentant"=>"Abeille", "prenomrepresentant"=>"JM", "fonctionrepresentant"=>"DG", "numerourssaf"=>"NUM URSSAF", "regionurssaf"=>"PACA", "adresseurssaf"=>"Adresse urssaf", "ville"=>"Marseillle", "invoice_ids"=>["", ""], "contrat_ids"=>["", "", "1"]}, "return_to"=>"http://localhost:3000/admin/user", "_save"=>"", "model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mInvoice Load (0.4ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices" WHERE 1=0[0m
+  [1m[36mInvoice Load (0.4ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices" WHERE "invoices"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mContrat Load (0.8ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."id" = 1[0m
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "nomentreprise" = $3, "adresseentreprise" = $4, "numerosiret" = $5, "numerocnaf" = $6, "formejuridique" = $7, "sexerepresentant" = $8, "nomrepresentant" = $9, "prenomrepresentant" = $10, "fonctionrepresentant" = $11, "numerourssaf" = $12, "regionurssaf" = $13, "adresseurssaf" = $14, "ville" = $15, "updated_at" = $16 WHERE "users"."id" = $17[0m  [["current_sign_in_at", "2017-10-04 13:50:00"], ["last_sign_in_at", "2017-10-03 20:08:00"], ["nomentreprise", "ACA"], ["adresseentreprise", "9 rue d'arcole"], ["numerosiret", "SIRET"], ["numerocnaf", "CNAF"], ["formejuridique", "SARL"], ["sexerepresentant", "Masculin"], ["nomrepresentant", "Abeille"], ["prenomrepresentant", "JM"], ["fonctionrepresentant", "DG"], ["numerourssaf", "NUM URSSAF"], ["regionurssaf", "PACA"], ["adresseurssaf", "Adresse urssaf"], ["ville", "Marseillle"], ["updated_at", "2017-10-04 15:25:25.618797"], ["id", 1]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/user
+Completed 302 Found in 38ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/admin/user" for 127.0.0.1 at 2017-10-04 17:25:25 +0200
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  Rendering /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (56.7ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.9ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (15.7ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.5ms)
+  Rendering /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (8.9ms)
+Completed 200 OK in 184ms (Views: 175.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2017-10-04 17:25:29 +0200
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "contrats"[0m
+  [1m[36mContrat Load (0.8ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" ORDER BY "contrats"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices"[0m
+  [1m[36mInvoice Load (0.3ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" ORDER BY "invoices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" ORDER BY "reviews"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (22.5ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.8ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (16.7ms)
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.5ms)
+  Rendering /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/Cellar/rbenv/1.1.1/versions/2.3.5/lib/ruby/gems/2.3.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (5.1ms)
+Completed 200 OK in 151ms (Views: 136.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-04 17:25:34 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (10.2ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 78ms (Views: 73.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats" for 127.0.0.1 at 2017-10-04 17:25:35 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navbar.html.erb (3.9ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 116ms (Views: 110.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:25:38 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (12.2ms)
+  Rendering text template
+  Rendered text template (0.2ms)
+Sent data Reporte.pdf (2.6ms)
+Completed 200 OK in 3244ms (Views: 2.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:26:45 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (33.4ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (2.0ms)
+Completed 200 OK in 3175ms (Views: 1.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:26:56 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.9ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (21.5ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (1.8ms)
+Completed 200 OK in 3389ms (Views: 1.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:27:21 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (1.0ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (14.6ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (2.1ms)
+Completed 200 OK in 2986ms (Views: 1.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:28:24 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (24.4ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (2.7ms)
+Completed 200 OK in 2952ms (Views: 1.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:41:01 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.7ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (39.7ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (2.7ms)
+Completed 200 OK in 3119ms (Views: 1.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:42:17 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (21.3ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.7ms)
+Completed 200 OK in 2969ms (Views: 0.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:42:48 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (11.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (38.7ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (30.7ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (1.1ms)
+Completed 200 OK in 2973ms (Views: 0.7ms | ActiveRecord: 50.2ms)
+
+
+Started GET "/contrats/" for 127.0.0.1 at 2017-10-04 17:43:27 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (0.9ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (8.0ms)
+  Rendered shared/_navbar.html.erb (5.3ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 133ms (Views: 123.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-04 17:43:29 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (1.8ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (204.8ms)
+  Rendered contrats/edit.html.erb within layouts/application (210.9ms)
+  Rendered shared/_navbar.html.erb (4.9ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 351ms (Views: 331.0ms | ActiveRecord: 7.6ms)
+
+
+Started PATCH "/contrats/1" for 127.0.0.1 at 2017-10-04 17:43:44 +0200
+Processing by ContratsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0MVl8psdlEQLwjISHeyH1OpgAZruCJHtEdMGr2xN0Y3Bab39FW/0EtLNwUT/uUBJMU1doKjEprZnnPy/kRZZDg==", "contrat"=>{"empcivilite"=>"Monsieur", "prenom"=>"Mathieu", "nom"=>"Abeille", "adresse"=>"6 Rue du Commandeur, 75014 Paris, France", "birthdate(1i)"=>"1991", "birthdate(2i)"=>"11", "birthdate(3i)"=>"9", "birthplace"=>"Marseille", "nationalite"=>"France", "nsecu"=>"191111315526108", "remuneration"=>"23", "nomposte"=>"Serveur", "jour1"=>"true", "jour2"=>"true", "jour3"=>"true", "jour4"=>"true", "jour5"=>"true", "jour6"=>"true", "jour7"=>"true", "jour1debut(1i)"=>"2017", "jour1debut(2i)"=>"10", "jour1debut(3i)"=>"3", "jour1debut(4i)"=>"07", "jour1debut(5i)"=>"00", "jour1fin(1i)"=>"2017", "jour1fin(2i)"=>"10", "jour1fin(3i)"=>"3", "jour1fin(4i)"=>"17", "jour1fin(5i)"=>"00", "jour2debut(1i)"=>"2017", "jour2debut(2i)"=>"10", "jour2debut(3i)"=>"4", "jour2debut(4i)"=>"08", "jour2debut(5i)"=>"00", "jour2fin(1i)"=>"2017", "jour2fin(2i)"=>"10", "jour2fin(3i)"=>"4", "jour2fin(4i)"=>"17", "jour2fin(5i)"=>"00", "jour3debut(1i)"=>"2017", "jour3debut(2i)"=>"10", "jour3debut(3i)"=>"3", "jour3debut(4i)"=>"11", "jour3debut(5i)"=>"10", "jour3fin(1i)"=>"2017", "jour3fin(2i)"=>"10", "jour3fin(3i)"=>"3", "jour3fin(4i)"=>"11", "jour3fin(5i)"=>"10", "jour4debut(1i)"=>"2017", "jour4debut(2i)"=>"10", "jour4debut(3i)"=>"3", "jour4debut(4i)"=>"11", "jour4debut(5i)"=>"10", "jour4fin(1i)"=>"2017", "jour4fin(2i)"=>"10", "jour4fin(3i)"=>"3", "jour4fin(4i)"=>"11", "jour4fin(5i)"=>"10", "jour5debut(1i)"=>"2017", "jour5debut(2i)"=>"10", "jour5debut(3i)"=>"3", "jour5debut(4i)"=>"11", "jour5debut(5i)"=>"10", "jour5fin(1i)"=>"2017", "jour5fin(2i)"=>"10", "jour5fin(3i)"=>"3", "jour5fin(4i)"=>"11", "jour5fin(5i)"=>"10", "jour6debut(1i)"=>"2017", "jour6debut(2i)"=>"10", "jour6debut(3i)"=>"3", "jour6debut(4i)"=>"11", "jour6debut(5i)"=>"10", "jour6fin(1i)"=>"2017", "jour6fin(2i)"=>"10", "jour6fin(3i)"=>"3", "jour6fin(4i)"=>"11", "jour6fin(5i)"=>"10", "jour7debut(1i)"=>"2017", "jour7debut(2i)"=>"10", "jour7debut(3i)"=>"3", "jour7debut(4i)"=>"11", "jour7debut(5i)"=>"10", "jour7fin(1i)"=>"2017", "jour7fin(2i)"=>"10", "jour7fin(3i)"=>"3", "jour7fin(4i)"=>"11", "jour7fin(5i)"=>"10", "permissejournum"=>"", "permissejourdate(1i)"=>"2017", "permissejourdate(2i)"=>"10", "permissejourdate(3i)"=>"3", "permissejourexp(1i)"=>"2017", "permissejourexp(2i)"=>"10", "permissejourexp(3i)"=>"3", "permissejourloc"=>"", "video"=>"true", "periodeessai"=>"true"}, "commit"=>"Créer le contrat", "id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.8ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "contrats" SET "jour3" = $1, "jour4" = $2, "jour5" = $3, "jour6" = $4, "jour7" = $5, "updated_at" = $6 WHERE "contrats"."id" = $7[0m  [["jour3", "t"], ["jour4", "t"], ["jour5", "t"], ["jour6", "t"], ["jour7", "t"], ["updated_at", "2017-10-04 15:43:44.378824"], ["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/contrats/1
+Completed 302 Found in 32ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-04 17:43:44 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.2ms)
+  Rendered shared/_navbar.html.erb (4.6ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 67.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:43:50 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (693.4ms)
+Completed 500 Internal Server Error in 718ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `jour4' for #<#<Class:0x00007ff36cb6adc0>:0x00007ff36c353420>):
+    167: 1 </b> jour.
+    168: <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == false %>
+    169: 2 </b> jours.
+    170: <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == true && jour4 == false %>
+    171: 3 </b> jours.
+    172: <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour4 == true && @contrat.jour4 == true && @contrat.jour5 == false %>
+    173: 4 </b> jours.
+  
+app/views/contrats/reporte.pdf.erb:170:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341734600520'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (165.7ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:45:43 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (1088.9ms)
+Completed 500 Internal Server Error in 1134ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `jour4' for #<#<Class:0x00007ff36cb6adc0>:0x00007ff368d110b0>):
+    167: 1 </b> jour.
+    168: <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == false %>
+    169: 2 </b> jours.
+    170: <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour3 == true && jour4 == false %>
+    171: 3 </b> jours.
+    172: <% elsif @contrat.jour1 == true &&  @contrat.jour2 == true && @contrat.jour4 == true && @contrat.jour4 == true && @contrat.jour5 == false %>
+    173: 4 </b> jours.
+  
+app/views/contrats/reporte.pdf.erb:170:in `_app_views_contrats_reporte_pdf_erb___1157844077359647845_70341676366820'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (146.3ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:46:18 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (9.4ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.3ms)
+Completed 200 OK in 3118ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:47:12 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.8ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (31.7ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (1.8ms)
+Completed 200 OK in 2879ms (Views: 1.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:48:07 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (14.2ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (0.9ms)
+Completed 200 OK in 3036ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:48:47 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (19.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.7ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (167.7ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.7ms)
+Completed 200 OK in 3245ms (Views: 0.8ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:49:07 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (16.1ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (2.2ms)
+Completed 200 OK in 2816ms (Views: 1.8ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:50:09 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (15.3ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (1.8ms)
+Completed 200 OK in 2971ms (Views: 1.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:51:01 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (12.9ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.2ms)
+Completed 200 OK in 2907ms (Views: 0.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:54:47 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (105.1ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (1.8ms)
+Completed 200 OK in 3114ms (Views: 1.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:55:12 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (18.3ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.3ms)
+Completed 200 OK in 2768ms (Views: 0.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:58:31 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (18.7ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (2.4ms)
+Completed 200 OK in 2911ms (Views: 1.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:59:04 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (15.6ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (1.5ms)
+Completed 200 OK in 2845ms (Views: 1.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-04 17:59:19 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (19.3ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.0ms)
+Completed 200 OK in 2720ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-05 09:47:45 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (24.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (802.2ms)
+  Rendered shared/_navbar.html.erb (18.3ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 896ms (Views: 864.0ms | ActiveRecord: 29.9ms)
+
+
+Started GET "/contrats" for 127.0.0.1 at 2017-10-05 09:47:48 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (7.1ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (112.0ms)
+  Rendered shared/_navbar.html.erb (9.8ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 290ms (Views: 191.1ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:47:50 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (14.1ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (3.9ms)
+Completed 200 OK in 3223ms (Views: 3.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:48:12 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (9.8ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (2.3ms)
+Completed 200 OK in 2407ms (Views: 1.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:49:11 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.7ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (24.2ms)
+Started GET "/contrats" for 127.0.0.1 at 2017-10-05 09:49:14 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 103ms (Views: 94.7ms | ActiveRecord: 2.0ms)
+
+
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.0ms)
+Completed 200 OK in 3113ms (Views: 0.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-05 09:49:16 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (145.9ms)
+  Rendered contrats/edit.html.erb within layouts/application (151.1ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 219ms (Views: 208.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:51:01 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (23.5ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.4ms)
+Completed 200 OK in 2851ms (Views: 0.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:51:40 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.7ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (18.9ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.3ms)
+Completed 200 OK in 2838ms (Views: 0.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:52:24 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (33.9ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.0ms)
+Completed 200 OK in 2360ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:52:45 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (10.4ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (0.9ms)
+Completed 200 OK in 2364ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:53:01 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (1.0ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (10.6ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Reporte.pdf (1.7ms)
+Completed 200 OK in 2462ms (Views: 1.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:54:31 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (13.4ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.3ms)
+Completed 200 OK in 2780ms (Views: 0.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:55:01 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (12.9ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.0ms)
+Completed 200 OK in 2380ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 09:56:09 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (13.1ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.1ms)
+Completed 200 OK in 2811ms (Views: 0.8ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Removeuselessfields (20171005080025)
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171005080025"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Removeuselessfields (20171005080025)
+  [1m[35m (5.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 10:09:43 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (10.8ms)
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 11.4ms)
+
+
+  
+SyntaxError (/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:47: syntax error, unexpected &&
+...xerepresentant == "homme" || && @contrat.user.sexerepresenta...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:49: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;       else 
+                    ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:371: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/contrats/reporte.pdf.erb:47: syntax error, unexpected &&
+app/views/contrats/reporte.pdf.erb:49: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:371: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (165.4ms)
+Started GET "/" for 127.0.0.1 at 2017-10-05 10:09:57 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (12.5ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 84ms (Views: 80.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contrats" for 127.0.0.1 at 2017-10-05 10:09:59 +0200
+Processing by ContratsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/index.html.erb within layouts/application
+  [1m[36mContrat Load (0.7ms)[0m  [1m[34mSELECT "contrats".* FROM "contrats" WHERE "contrats"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered contrats/index.html.erb within layouts/application (9.8ms)
+  Rendered shared/_navbar.html.erb (103.3ms)
+  Rendered shared/_footer.html.erb (7.3ms)
+Completed 200 OK in 321ms (Views: 310.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-05 10:10:02 +0200
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (3.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (146.7ms)
+  Rendered contrats/edit.html.erb within layouts/application (149.8ms)
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 239ms (Views: 225.5ms | ActiveRecord: 5.5ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Removeuselessfields (20171005081021)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.4ms)[0m  [1m[35mALTER TABLE "contrats" DROP "societe"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "nsiret"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "cnaf"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sadresse"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "scposte"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sexerepresentant"[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "contrats" DROP "societe"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Removeuselessfields (20171005081021)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.5ms)[0m  [1m[35mALTER TABLE "contrats" DROP "societe"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "contrats" DROP "nsiret"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "contrats" DROP "cnaf"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sadresse"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "contrats" DROP "scposte"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sexerepresentant"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "typesociete"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "prenomrepresentant"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "nomrepresentant"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "numeroaffiliation"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "regionurssaf"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "adresseurssaf"[0m
+  [1m[35m (6.1ms)[0m  [1m[35mALTER TABLE "contrats" DROP "societe"[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Removeuselessfields (20171005081021)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "contrats" DROP "societe"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "nsiret"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "cnaf"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sadresse"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "scposte"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sexerepresentant"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "typesociete"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "prenomrepresentant"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "nomrepresentant"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "numeroaffiliation"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "regionurssaf"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "adresseurssaf"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "contrats" DROP "societe"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Removeuselessfields (20171005081021)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "contrats" DROP "societe"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "nsiret"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "contrats" DROP "cnaf"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sadresse"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "scposte"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sexerepresentant"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "typesociete"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "prenomrepresentant"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "nomrepresentant"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "numeroaffiliation"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "regionurssaf"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "adresseurssaf"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sville"[0m
+  [1m[35m (7.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "societe"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7348093897707989475);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Removeuselessfields (20171005081021)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "contrats" DROP "societe"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "nsiret"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "cnaf"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sadresse"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "scposte"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sexerepresentant"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "typesociete"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "prenomrepresentant"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "nomrepresentant"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "numeroaffiliation"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "contrats" DROP "regionurssaf"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "adresseurssaf"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "sville"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "dureeprobation"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "contrats" DROP "probrationfin"[0m
+  [1m[35mSQL (19.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171005081021"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7348093897707989475)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/contrats/1/edit" for 127.0.0.1 at 2017-10-05 10:13:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContratsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (7.2ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/edit.html.erb within layouts/application
+  Rendered contrats/_form.html.erb (101.9ms)
+  Rendered contrats/edit.html.erb within layouts/application (111.5ms)
+  Rendered shared/_navbar.html.erb (5.3ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 293ms (Views: 191.7ms | ActiveRecord: 26.1ms)
+
+
+Started PATCH "/contrats/1" for 127.0.0.1 at 2017-10-05 10:13:08 +0200
+Processing by ContratsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O4MMvLGAnwFNygrz5y4DoH6fLUvGrXFw6FQPYIeyUqkqL9SzP/L/V5TF+aUFe8Q9pbJxcYBhRiueG/VweunaKg==", "contrat"=>{"empcivilite"=>"Monsieur", "prenom"=>"Mathieu", "nom"=>"Abeille", "adresse"=>"6 Rue du Commandeur, 75014 Paris, France", "birthdate(1i)"=>"1991", "birthdate(2i)"=>"11", "birthdate(3i)"=>"9", "birthplace"=>"Marseille", "nationalite"=>"France", "nsecu"=>"191111315526108", "remuneration"=>"23", "nomposte"=>"Serveur", "jour1"=>"true", "jour2"=>"true", "jour3"=>"true", "jour4"=>"true", "jour5"=>"true", "jour6"=>"true", "jour7"=>"true", "jour1debut(1i)"=>"2017", "jour1debut(2i)"=>"10", "jour1debut(3i)"=>"3", "jour1debut(4i)"=>"07", "jour1debut(5i)"=>"00", "jour1fin(1i)"=>"2017", "jour1fin(2i)"=>"10", "jour1fin(3i)"=>"3", "jour1fin(4i)"=>"17", "jour1fin(5i)"=>"00", "jour2debut(1i)"=>"2017", "jour2debut(2i)"=>"10", "jour2debut(3i)"=>"4", "jour2debut(4i)"=>"08", "jour2debut(5i)"=>"00", "jour2fin(1i)"=>"2017", "jour2fin(2i)"=>"10", "jour2fin(3i)"=>"4", "jour2fin(4i)"=>"17", "jour2fin(5i)"=>"00", "jour3debut(1i)"=>"2017", "jour3debut(2i)"=>"10", "jour3debut(3i)"=>"3", "jour3debut(4i)"=>"11", "jour3debut(5i)"=>"10", "jour3fin(1i)"=>"2017", "jour3fin(2i)"=>"10", "jour3fin(3i)"=>"3", "jour3fin(4i)"=>"11", "jour3fin(5i)"=>"10", "jour4debut(1i)"=>"2017", "jour4debut(2i)"=>"10", "jour4debut(3i)"=>"3", "jour4debut(4i)"=>"11", "jour4debut(5i)"=>"10", "jour4fin(1i)"=>"2017", "jour4fin(2i)"=>"10", "jour4fin(3i)"=>"3", "jour4fin(4i)"=>"11", "jour4fin(5i)"=>"10", "jour5debut(1i)"=>"2017", "jour5debut(2i)"=>"10", "jour5debut(3i)"=>"3", "jour5debut(4i)"=>"11", "jour5debut(5i)"=>"10", "jour5fin(1i)"=>"2017", "jour5fin(2i)"=>"10", "jour5fin(3i)"=>"3", "jour5fin(4i)"=>"11", "jour5fin(5i)"=>"10", "jour6debut(1i)"=>"2017", "jour6debut(2i)"=>"10", "jour6debut(3i)"=>"3", "jour6debut(4i)"=>"11", "jour6debut(5i)"=>"10", "jour6fin(1i)"=>"2017", "jour6fin(2i)"=>"10", "jour6fin(3i)"=>"3", "jour6fin(4i)"=>"11", "jour6fin(5i)"=>"10", "jour7debut(1i)"=>"2017", "jour7debut(2i)"=>"10", "jour7debut(3i)"=>"3", "jour7debut(4i)"=>"11", "jour7debut(5i)"=>"10", "jour7fin(1i)"=>"2017", "jour7fin(2i)"=>"10", "jour7fin(3i)"=>"3", "jour7fin(4i)"=>"11", "jour7fin(5i)"=>"10", "permissejournum"=>"", "permissejourdate(1i)"=>"2017", "permissejourdate(2i)"=>"10", "permissejourdate(3i)"=>"3", "permissejourexp(1i)"=>"2017", "permissejourexp(2i)"=>"10", "permissejourexp(3i)"=>"3", "permissejourloc"=>"", "video"=>"true", "periodeessai"=>"true"}, "commit"=>"Créer le contrat", "id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (1.6ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/contrats/1
+Completed 302 Found in 32ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/contrats/1" for 127.0.0.1 at 2017-10-05 10:13:08 +0200
+Processing by ContratsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering contrats/show.html.erb within layouts/application
+  Rendered contrats/show.html.erb within layouts/application (1.5ms)
+  Rendered shared/_navbar.html.erb (6.2ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 106ms (Views: 97.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 10:13:09 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.3ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (9.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:47: syntax error, unexpected &&
+...xerepresentant == "homme" || && @contrat.user.sexerepresenta...
+...                               ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:49: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;       else 
+                    ^
+/Users/mathieuabeille/code/app-aca-consult/app/views/contrats/reporte.pdf.erb:371: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/contrats/reporte.pdf.erb:47: syntax error, unexpected &&
+app/views/contrats/reporte.pdf.erb:49: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/contrats/reporte.pdf.erb:371: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (162.4ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 10:13:46 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.4ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (33.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `typesociete' for #<Contrat:0x00007fdf61e4dcc8>):
+    309: </p>
+    310: <br/>
+    311: <u><h4>ARTICLE <% if @contrat.periodeessai == true %>9<% else %>10 <% end %> : OBLIGATIONS PROFESSIONNELLES</h4></u>
+    312: <p>En l’état de la nature du contrat ne permettant pas à <b><%= @contrat.empcivilite %> <%= @contrat.nom.capitalize %> <%= @contrat.prenom %></b>  s'engage à observer les dispositions réglementant les conditions de travail applicables à l’ensemble des salariés de <%= @contrat.typesociete %> <%= @contrat.societe %> ainsi que les règles générales concernant la discipline et la sécurité du travail.</p>
+    313: 
+    314: <p>Le salarié s'engage par ailleurs :
+    315: <li>à se conformer aux directives et instructions émanant de la direction ou de son représentant ;
+  
+app/views/contrats/reporte.pdf.erb:312:in `_app_views_contrats_reporte_pdf_erb___386122137999260550_70298695019600'
+app/controllers/contrats_controller.rb:22:in `block (2 levels) in show'
+app/controllers/contrats_controller.rb:19:in `show'
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/opt/rbenv/versions/2.3.5/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (163.3ms)
+Started GET "/contrats/1.pdf" for 127.0.0.1 at 2017-10-05 10:15:29 +0200
+Processing by ContratsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mContrat Load (0.5ms)[0m  [1m[34mSELECT  "contrats".* FROM "contrats" WHERE "contrats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+***************WICKED***************
+  Rendering contrats/reporte.pdf.erb
+  Rendered contrats/reporte.pdf.erb (23.4ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Reporte.pdf (1.4ms)
+Completed 200 OK in 3066ms (Views: 0.7ms | ActiveRecord: 1.1ms)
+
+

@@ -15,6 +15,7 @@
 <p>
   <strong>Adresse:</strong>
   <%= @contrat.adresse %>
+
 </p>
 <%= link_to "Générer le contrat", contrat_path(@contrat, format: 'pdf'), class: 'btn btn-medium btn-lg' %>
 <br/><br/>

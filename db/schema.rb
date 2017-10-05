@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171003133748) do
+ActiveRecord::Schema.define(version: 20171005081021) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,23 +34,10 @@ ActiveRecord::Schema.define(version: 20171003133748) do
     t.string   "nom"
     t.string   "prenom"
     t.string   "adresse"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
     t.date     "startdate"
-    t.string   "societe"
-    t.string   "nsiret"
-    t.string   "cnaf"
-    t.string   "sadresse"
-    t.string   "scposte"
-    t.string   "sexerepresentant"
-    t.string   "typesociete"
-    t.string   "nomrepresentant"
-    t.string   "prenomrepresentant"
     t.string   "posterepresentant"
-    t.string   "numeroaffiliation"
-    t.string   "regionurssaf"
-    t.string   "adresseurssaf"
-    t.string   "sville"
     t.string   "empcivilite"
     t.string   "birthplace"
     t.date     "birthdate"
@@ -62,8 +49,6 @@ ActiveRecord::Schema.define(version: 20171003133748) do
     t.string   "nsecu"
     t.date     "datefin"
     t.string   "nomposte"
-    t.string   "dureeprobation"
-    t.date     "probrationfin"
     t.string   "remuneration"
     t.string   "heures"
     t.datetime "jour1debut"
@@ -84,6 +69,13 @@ ActiveRecord::Schema.define(version: 20171003133748) do
     t.boolean  "video"
     t.boolean  "periodeessai"
     t.integer  "user_id"
+    t.boolean  "jour1"
+    t.boolean  "jour2"
+    t.boolean  "jour3"
+    t.boolean  "jour4"
+    t.boolean  "jour5"
+    t.boolean  "jour6"
+    t.boolean  "jour7"
     t.index ["user_id"], name: "index_contrats_on_user_id", using: :btree
   end
 

@@ -15,6 +15,7 @@ class ContratsController < ApplicationController
   # GET /contrats/1
   # GET /contrats/1.json
   def show
+    @contrat.user = current_user
     respond_to do |format|
       format.html
       format.json
@@ -100,6 +101,13 @@ class ContratsController < ApplicationController
 :jour5fin,
 :jour6fin,
 :jour7fin,
+:jour1,
+:jour2,
+:jour3,
+:jour4,
+:jour5,
+:jour6,
+:jour7,
 :nom, :datefin, :nomposte, :nsecu, :permissejournum, :permissejourloc, :permissejourexp, :permissejourdate, :nationalite, :empcivilite, :birthplace, :birthdate, :prenom, :adresseursaff, :sexerepresentant, :adresseurssaf, :regionurssaf, :numeroaffiliation, :nomrepresentant, :prenomrepresentant, :posterepresentant, :typesociete,:adresse, :nsiret, :societe, :cnaf, :sville, :scposte, :sadresse, :startdate)
     end
 end

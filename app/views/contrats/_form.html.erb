@@ -82,27 +82,40 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-1">
-             <p>Jour 1</p> <br/><br/><br/><br/><br/><br/><p>Jour 2</p>
-             <br/><br/><br/><br/><br/><p>Jour 3</p>
-             <br/><br/><br/><br/><br/><p>Jour 4</p>
-             <br/><br/><br/><br/><br/><br/><p>Jour 5</p>
-             <br/><br/><br/><br/><br/><p>Jour 6</p>
-             <br/><br/><br/><br/><br/><p>Jour 7</p>
+             <%= f.input :jour1, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
+             <br/><br/><br/>
+             <%= f.input :jour2, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
+             <br/><br/><br/><br/>
+             <%= f.input :jour3, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
+             <br/><br/><br/><br/>
+             <%= f.input :jour4, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
+             <br/><br/><br/><br/>
+             <%= f.input :jour5, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
+             <br/><br/><br/><br/><br/>
+             <%= f.input :jour6, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
+             <br/><br/><br/><br/>
+             <%= f.input :jour7, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
 
             </div>
             <div class="col-xs-8">
               <%= f.input :jour1debut, label: "Horaire de début" %>
         <%= f.input :jour1fin, label: "Horaire de fin" %>
+        <hr width="50%" align="left" color="#F56D55">
         <%= f.input :jour2debut, label: "Horaire de début" %>
         <%= f.input :jour2fin, label: "Horaire de fin" %>
+        <hr width="50%" align="left" color="#F56D55">
         <%= f.input :jour3debut, label: "Horaire de début" %>
         <%= f.input :jour3fin, label: "Horaire de fin" %>
+        <hr width="50%" align="left" color="#F56D55">
         <%= f.input :jour4debut, label: "Horaire de début" %>
         <%= f.input :jour4fin, label: "Horaire de fin" %>
+        <hr width="50%" align="left" color="#F56D55">
         <%= f.input :jour5debut, label: "Horaire de début" %>
         <%= f.input :jour5fin, label: "Horaire de fin" %>
+        <hr width="50%" align="left" color="#F56D55">
         <%= f.input :jour6debut, label: "Horaire de début" %>
         <%= f.input :jour6fin, label: "Horaire de fin" %>
+        <hr width="50%"  align="left" color="#F56D55">
         <%= f.input :jour7debut, label: "Horaire de début" %>
         <%= f.input :jour7fin, label: "Horaire de fin" %>
             </div>
