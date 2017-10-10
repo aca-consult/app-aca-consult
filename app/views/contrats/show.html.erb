@@ -8,9 +8,9 @@
 
 <p>
 
-  <%= @contrat.nom %>
-  <%= @contrat.prenom %>, <i>
-  <%= @contrat.adresse %></i>
+  <%= @contrat.employee.nom %>
+  <%= @contrat.employee.prenom %>, <i>
+  <%= @contrat.employee.adresse %></i>
 </p>
 
 <p>  Pour un poste de <b> <%= @contrat.nomposte %></b><br/> <b>
@@ -29,7 +29,7 @@
 
     </b>
 
-     heures remunérées <b><%= @contrat.remuneration %></b> Euros
+     heures remunérées <b><%= @contrat.remuneration*nombreheure/3600 %></b> Euros (<%= @contrat.remuneration %> par heure)
 </p>
 
 

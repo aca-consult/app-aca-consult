@@ -4,7 +4,8 @@ class ContratsController < ApplicationController
   # GET /contrats
   # GET /contrats.json
   def index
-    @contrats = current_user.contrats
+    @contrats = Contrat.all
+
     respond_to do |format|
       format.html
       format.json
@@ -15,6 +16,7 @@ class ContratsController < ApplicationController
   # GET /contrats/1
   # GET /contrats/1.json
   def show
+    @contrat = Contrat.find(params[:id])
     @contrat.user = current_user
     respond_to do |format|
       format.html
@@ -25,7 +27,10 @@ class ContratsController < ApplicationController
 
   # GET /contrats/new
   def new
+    @employee = Employee.find(params[:employee_id])
     @contrat = Contrat.new
+
+
   end
 
   # GET /contrats/1/edit
@@ -36,11 +41,12 @@ class ContratsController < ApplicationController
   # POST /contrats.json
   def create
     @contrat = Contrat.new(contrat_params)
-    @contrat.user = current_user
+    @contrat.employee = Employee.find(params[:employee_id])
+
 
     respond_to do |format|
       if @contrat.save
-        format.html { redirect_to @contrat, notice: 'Contrat was successfully created.' }
+        format.html { redirect_to [@employee, @contrat], notice: 'Contrat was successfully created.' }
         format.json { render :show, status: :created, location: @contrat }
       else
         format.html { render :new }

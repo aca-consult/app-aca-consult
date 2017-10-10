@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+  resources :employees do
+    resources :contrats, only: [:new, :create, :edit, :update]
+
+  end
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :contrats
+  resources :contrats, only: [:index, :destroy, :show]
+
   mount Attachinary::Engine => "/attachinary"
   devise_for :users
 

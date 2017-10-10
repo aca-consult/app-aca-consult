@@ -1,131 +1,80 @@
-<div class="logbox">
-<%= simple_form_for(@contrat) do |f| %>
+<div class="logbox-contrat">
+<%= simple_form_for([@employee, @contrat]) do |f| %>
   <%= f.error_notification %>
-  <div class="form-inputs">
+<div class="form-inputs">
 
 
-<!-- identification  -->
+
+<% @skip_footer = true %>
+<!-- Modal -->
+
+
+
 <div class="container">
   <div class="row">
-    <div class="col-sm-2">
-      <%= f.input :empcivilite, collection: [ "Madame", "Mademoiselle", "Monsieur"] , label: "Civilité", selected: "Monsieur" %>
-    </div>
-    <div class="col-sm-4">
-      <%= f.input :prenom, label: "Prénom" %>
-    </div>
-    <div class="col-sm-4">
-      <%= f.input :nom, label: "Nom" %>
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-8">
-       <%= f.input :adresse, label: "Adresse" %>
-      <%= f.input :birthdate, as: :date, label: "Date de naissance", start_year: Date.today.year - 90,
-                              end_year: Date.today.year - 16 %>
-    </div>
-  </div>
-
-
-<!-- nationalité -->
-    <div class="row">
-    <div class="col-sm-2">
-      <br/><button type="button" class="btn-medium" data-toggle="modal" data-target="#horsue">
-        Nationalité hors Union Européenne
-      </button>
-    </div>
-    <div class="col-sm-4">
-      <%= f.input :birthplace, label: "Lieu de naissance" %>
-    </div>
-    <div class="col-sm-4">
-      <%= f.input :nationalite, label: "Nationalité" %>
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-8">
-       <%= f.input :nsecu, label: "Numéro de sécurité sociale" %>
-    </div>
-  </div>
-
-<!-- emploi -->
-    <div class="row">
-      <div class="col-sm-2">
-        <br/>
+    <div class="col-sm-6">
+      <center><h3>Nouveau contrat</h3></center>
+      <%= f.input :remuneration, label: "Salaire horaire" %>
+      <%= f.input :nomposte, collection: [ "Serveur", "Chef de rang", "Runner"] ,  selected: "Serveur", label: "Intitulé du poste" %>
+      <div class=" col-sm-3">
+        <%= f.input :jour1, as: :boolean, checked_value: true, unchecked_value: false, label: "Activer jour 1" %>
       </div>
-
-        <div class="col-sm-4">
-            <%= f.input :remuneration, label: "Rémunération" %>
-        </div>
-        <div class="col-sm-4">
-          <%= f.input :nomposte, collection: [ "Serveur", "Chef de rang", "Runner"] ,  selected: "Serveur", label: "Intitulé du poste" %>
-        </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="planning" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">horaires de l'employé</h4>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-1">
-             <%= f.input :jour1, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
-             <br/><br/><br/>
-             <%= f.input :jour2, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
-             <br/><br/><br/><br/>
-             <%= f.input :jour3, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
-             <br/><br/><br/><br/>
-             <%= f.input :jour4, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
-             <br/><br/><br/><br/>
-             <%= f.input :jour5, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
-             <br/><br/><br/><br/><br/>
-             <%= f.input :jour6, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
-             <br/><br/><br/><br/>
-             <%= f.input :jour7, as: :boolean, checked_value: true, unchecked_value: false, label: "Ajouter au contrat" %>
-
-            </div>
-            <div class="col-xs-8">
-              <%= f.input :jour1debut, label: "Horaire de début" %>
+      <div class=" col-sm-9">
+        <%= f.input :jour1debut, label: "Horaire de début" %>
         <%= f.input :jour1fin, label: "Horaire de fin" %>
         <hr width="50%" align="left" color="#F56D55">
+      </div>
+      <div class=" col-sm-3">
+        <%= f.input :jour2, as: :boolean, checked_value: true, unchecked_value: false, label: "Activer jour 2" %>
+      </div>
+      <div class=" col-sm-9">
         <%= f.input :jour2debut, label: "Horaire de début" %>
         <%= f.input :jour2fin, label: "Horaire de fin" %>
         <hr width="50%" align="left" color="#F56D55">
+      </div>
+      <div class=" col-sm-3">
+        <%= f.input :jour3, as: :boolean, checked_value: true, unchecked_value: false, label: "Activer jour 3" %>
+      </div>
+      <div class=" col-sm-9">
         <%= f.input :jour3debut, label: "Horaire de début" %>
         <%= f.input :jour3fin, label: "Horaire de fin" %>
         <hr width="50%" align="left" color="#F56D55">
+      </div>
+      <div class=" col-sm-3">
+        <%= f.input :jour4, as: :boolean, checked_value: true, unchecked_value: false, label: "Activer jour 4" %>
+      </div>
+      <div class=" col-sm-9">
         <%= f.input :jour4debut, label: "Horaire de début" %>
         <%= f.input :jour4fin, label: "Horaire de fin" %>
         <hr width="50%" align="left" color="#F56D55">
+      </div>
+      <div class=" col-sm-3">
+        <%= f.input :jour5, as: :boolean, checked_value: true, unchecked_value: false, label: "Activer jour 5" %>
+      </div>
+      <div class=" col-sm-9">
         <%= f.input :jour5debut, label: "Horaire de début" %>
         <%= f.input :jour5fin, label: "Horaire de fin" %>
         <hr width="50%" align="left" color="#F56D55">
+      </div>
+      <div class=" col-sm-3">
+        <%= f.input :jour6, as: :boolean, checked_value: true, unchecked_value: false, label: "Activer jour 6" %>
+      </div>
+      <div class=" col-sm-9">
         <%= f.input :jour6debut, label: "Horaire de début" %>
         <%= f.input :jour6fin, label: "Horaire de fin" %>
-        <hr width="50%"  align="left" color="#F56D55">
+        <hr width="50%" align="left" color="#F56D55">
+      </div>
+      <div class=" col-sm-3">
+        <%= f.input :jour7, as: :boolean, checked_value: true, unchecked_value: false, label: "Activer jour 7" %>
+      </div>
+      <div class=" col-sm-9">
         <%= f.input :jour7debut, label: "Horaire de début" %>
         <%= f.input :jour7fin, label: "Horaire de fin" %>
-            </div>
-
-          </div>
-        </div>
-
-
+        <hr width="50%" align="left" color="#F56D55">
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-medium " data-dismiss="modal">Sauvegarder</button>
-      </div>
+
+
+    </div>
     </div>
   </div>
 </div>
@@ -133,37 +82,16 @@
 
 
 <!-- Modal 2 -->
-<div class="modal fade" id="horsue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Travailleur de nationalité hors UE</h4>
-      </div>
-        <div class="modal-body">
-        <%= f.input :permissejournum, label: "Numéro de permis de séjour" %>
-          <%= f.input :permissejourdate, label: "Début du permis de séjour" %>
-          <%= f.input :permissejourexp, label: "Expiration du permis de séjour" %>
-          <%= f.input :permissejourloc, label: "Préfecture qui a délivré le permis de séjour" %>
 
-        </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-medium " data-dismiss="modal">Sauvegarder</button>
-      </div>
-    </div>
-  </div>
-</div>
- <center><button type="button" class="btn-medium" data-toggle="modal" data-target="#planning">
-          Horaires de l'employé
-        </button>
+ <center>
   <%= f.input :video, as: :boolean, checked_value: true, unchecked_value: false, label: "Présence de caméra de surveillance" %>
   <%= f.input :periodeessai, as: :boolean, checked_value: true, unchecked_value: false, label: "La période d'essai a été faite" %>
 
 <div class="form-actions">
      <%= f.button :submit, "Créer le contrat", class: 'btn-medium', label: "Créer le contrat" %></center>
-    </div>
-  </div>
+
 <% end %>
+</div>
 </div>
 </div>
 

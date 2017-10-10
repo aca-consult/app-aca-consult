@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171005081021) do
+ActiveRecord::Schema.define(version: 20171010130057) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,25 +31,9 @@ ActiveRecord::Schema.define(version: 20171005081021) do
   end
 
   create_table "contrats", force: :cascade do |t|
-    t.string   "nom"
-    t.string   "prenom"
-    t.string   "adresse"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-    t.date     "startdate"
-    t.string   "posterepresentant"
-    t.string   "empcivilite"
-    t.string   "birthplace"
-    t.date     "birthdate"
-    t.string   "nationalite"
-    t.date     "permissejourexp"
-    t.date     "permissejourdate"
-    t.string   "permissejournum"
-    t.string   "permissejourloc"
-    t.string   "nsecu"
-    t.date     "datefin"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.string   "nomposte"
-    t.string   "remuneration"
     t.string   "heures"
     t.datetime "jour1debut"
     t.datetime "jour2debut"
@@ -65,7 +49,6 @@ ActiveRecord::Schema.define(version: 20171005081021) do
     t.datetime "jour5fin"
     t.datetime "jour6fin"
     t.datetime "jour7fin"
-    t.string   "dureecontrat"
     t.boolean  "video"
     t.boolean  "periodeessai"
     t.integer  "user_id"
@@ -76,7 +59,27 @@ ActiveRecord::Schema.define(version: 20171005081021) do
     t.boolean  "jour5"
     t.boolean  "jour6"
     t.boolean  "jour7"
+    t.integer  "employee_id"
+    t.float    "remuneration"
+    t.index ["employee_id"], name: "index_contrats_on_employee_id", using: :btree
     t.index ["user_id"], name: "index_contrats_on_user_id", using: :btree
+  end
+
+  create_table "employees", force: :cascade do |t|
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "empcivilite"
+    t.string   "prenom"
+    t.string   "nom"
+    t.string   "adresse"
+    t.date     "datedenaissance"
+    t.string   "lieudenaissance"
+    t.string   "nationalite"
+    t.string   "nsecu"
+    t.string   "permissejournum"
+    t.date     "permissejourexp"
+    t.string   "permissejourloc"
+    t.date     "permissejourdate"
   end
 
   create_table "invoices", force: :cascade do |t|
@@ -143,6 +146,7 @@ ActiveRecord::Schema.define(version: 20171005081021) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "contrats", "employees"
   add_foreign_key "contrats", "users"
   add_foreign_key "invoices", "users"
   add_foreign_key "reviews", "invoices"
