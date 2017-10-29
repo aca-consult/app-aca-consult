@@ -24,6 +24,12 @@ gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
+gem 'autoprefixer-rails'
+gem 'bootstrap-datepicker-rails'
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+gem "bootstrap-switch-rails"
+gem 'bootstrap-toggle-rails'
 
 
 

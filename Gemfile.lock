@@ -7,10 +7,26 @@ GIT
       rails (>= 3.2)
 
 GIT
+  remote: git://github.com/derekprior/momentjs-rails.git
+  revision: ea58a20b7b2c901831dd01f34e0054ef6c75bde8
+  specs:
+    momentjs-rails (2.17.1)
+      railties (>= 3.1)
+
+GIT
   remote: git://github.com/mshibuya/remotipart.git
   revision: cd653ddc43bb09767b8f2802d6e27b3e00ef992f
   specs:
     remotipart (1.3.1)
+
+GIT
+  remote: git://github.com/zpaulovics/datetimepicker-rails.git
+  revision: 36d21cec5da7f5b214925804f60e63c61c747023
+  branch: master
+  submodules: true
+  specs:
+    datetimepicker-rails (4.7.16)
+      momentjs-rails (>= 2.9.0)
 
 GEM
   remote: https://rubygems.org/
@@ -58,9 +74,13 @@ GEM
     aws_cf_signer (0.1.3)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bootstrap-datepicker-rails (1.7.1.1)
+      railties (>= 3.0)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-switch-rails (3.3.3)
+    bootstrap-toggle-rails (2.2.1.0)
     builder (3.2.3)
     byebug (9.1.0)
     cloudinary (1.1.7)
@@ -267,9 +287,13 @@ PLATFORMS
 DEPENDENCIES
   attachinary!
   autoprefixer-rails
+  bootstrap-datepicker-rails
   bootstrap-sass
+  bootstrap-switch-rails
+  bootstrap-toggle-rails
   cloudinary (= 1.1.7)
   coffee-rails
+  datetimepicker-rails!
   devise
   figaro
   font-awesome-sass
@@ -277,6 +301,7 @@ DEPENDENCIES
   jquery-fileupload-rails
   jquery-rails
   listen (~> 3.0.5)
+  momentjs-rails (~> 2.9)!
   pg
   pry-byebug
   pry-rails
