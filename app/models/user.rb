@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :invoices
   has_many :contrats
+   has_many :contratcdds
 end
