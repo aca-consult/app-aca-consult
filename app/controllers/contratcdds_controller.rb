@@ -87,7 +87,8 @@ class ContratcddsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contratcdd_params
-      params.require(:contratcdd).permit()
+      params.require(:contratcdd).permit(:debut, :fin, :poste, :remuneration, :video, :heurehebdo,
+        :periodeessai)
     end
 
 end

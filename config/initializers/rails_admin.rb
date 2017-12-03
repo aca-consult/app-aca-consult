@@ -84,6 +84,22 @@ RailsAdmin.config do |config|
             field :ville do
     label "Ville ou est signée le contrat de travail" # Change the label of this field
   end
+            field :conventioncollective do
+    label "conventioncollective" # Change the label of this field
+  end
+              field :conventioncollectivetype do
+    label "type de convention collective" # Change the label of this field
+  end
+
+              field :caisseretraite do
+    label "type de convention collective" # Change the label of this field
+  end
+
+                field :caisseprevoyance do
+    label "type de convention collective" # Change the label of this field
+  end
+
+
 end
 
 
