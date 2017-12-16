@@ -92,11 +92,11 @@ RailsAdmin.config do |config|
   end
 
               field :caisseretraite do
-    label "type de convention collective" # Change the label of this field
+    label "caisse de retraite" # Change the label of this field
   end
 
                 field :caisseprevoyance do
-    label "type de convention collective" # Change the label of this field
+    label "Caisse de prévoyance" # Change the label of this field
   end
 
 
